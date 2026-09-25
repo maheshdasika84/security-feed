@@ -1,0 +1,52 @@
+{
+  "feed_version": "2026.09.25-v1",
+  "signatures": [
+    {
+      "sha256": "f10cbb2e0f40d7c0f16f5c8ff77c0cecf4dd91f5aa86f68cfaebae8ef2b8df1b",
+      "name": "Trojan.AgentTesla",
+      "type": "Keylogger / Credential Stealer",
+      "severity": "Critical",
+      "desc": "Advanced information stealer targeting browser credentials."
+    },
+    {
+      "sha256": "b9687e3be992c68f760e42d7be83cb1bb91e1d034293f0b2da5f9d7f45778844",
+      "name": "Ransom.BlackCat",
+      "type": "Ransomware",
+      "severity": "Critical",
+      "desc": "ALPHV/BlackCat cross-platform corporate encryptor."
+    },
+    {
+      "sha256": "a3b9837f6eb052b61efc2763f034f71587d1ea2e6833ef7e98a3e7436b7b2501",
+      "name": "Worm.RaspberryRobin",
+      "type": "USB Worm",
+      "severity": "High",
+      "desc": "USB-propagating initial access worm utilizing LNK droppers."
+    }
+  ],
+  "domains": {
+    "login-secure-appleid.biz": {
+      "type": "Phishing",
+      "severity": "Critical",
+      "desc": "Apple ID cloud credential harvesting clone."
+    },
+    "metamask-synchronize-portal.live": {
+      "type": "Crypto Phishing",
+      "severity": "Critical",
+      "desc": "Deceptive Web3 seed phrase drainer."
+    },
+    "free-steam-gifts-promo.site": {
+      "type": "Scam / Phishing",
+      "severity": "High",
+      "desc": "Steam community credential stealer clone."
+    }
+  },
+  "metadata": {
+    "key_id": "k2",
+    "issued_at": 1790358838,
+    "expires_at": 1791568438,
+    "revoked_key_ids": [
+      "k1"
+    ]
+  },
+  "signature": "4815691aff871350007cfcc586ba2dba4ae37fd64675fd5124437034f11dd34b2f1a5849e8a806a0dbe36762ee5e6a18084deb60e4dd595e2e4d7ca56547ff0d"
+}
