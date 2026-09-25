@@ -36,6 +36,15 @@ in every feed so clients that missed an earlier feed still learn it).
 The workflow (`.github/workflows/pages.yml`) runs the same check and only publishes a feed that
 passes. Feeds expire, so re-sign at least every `--valid-days` days (at most 30).
 
+**Reminders:** `.github/workflows/expiry-reminder.yml` checks daily and opens an issue (email and
+GitHub app notification) when the feed expires within 3 days. The Security app on the publisher's PC
+also shows a reminder popup when *Cloud Intelligence → I publish this feed* is ticked
+(or `main.py --feed-reminder on`). `main.py --feed-status` shows the live version and days left.
+
+**Why feeds expire:** so nobody (a network attacker, or the host) can keep clients on an old signed
+feed forever. After expiry, clients reject the feed and fall back to their built-in list until a
+fresh one is published.
+
 ## If a signing key leaks
 
 Sign with the next key (`k3`, already built into every client) and revoke the leaked one:

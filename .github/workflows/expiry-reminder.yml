@@ -1,0 +1,51 @@
+name: Feed expiry reminder
+
+# Opens (once) a GitHub issue when the published feed expires within 3 days or has expired, so
+# the owner gets an email / GitHub mobile notification even if no PC is on. Closing the issue is
+# up to the owner after re-signing; a new one is opened for the next expiry.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: Days until the feed expires
+        id: expiry
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json, time
+          meta = json.load(open("threat_feed.json")).get("metadata") or {}
+          exp = float(meta.get("expires_at", 0))
+          days = (exp - time.time()) / 86400
+          print(f"days={days:.1f}")
+          print(f"date={time.strftime('%Y-%m-%d', time.gmtime(exp))}")
+          print(f"due={'true' if days <= 3 else 'false'}")
+          EOF
+
+      - name: Open a reminder issue (once per expiry date)
+        if: steps.expiry.outputs.due == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DAYS: ${{ steps.expiry.outputs.days }}
+          DATE: ${{ steps.expiry.outputs.date }}
+        run: |
+          title="Re-sign the threat feed: it expires on ${DATE}"
+          existing=$(gh issue list --state open --search "in:title \"${title}\"" --json number --jq 'length')
+          if [ "$existing" = "0" ]; then
+            gh issue create --title "$title" --body "The published feed expires on ${DATE} (${DAYS} days left; negative = already expired). Installed apps reject an expired feed and fall back to their built-in list.
+
+          Re-sign it with key k2 and push threat_feed.json here (steps in README.md). Close this issue once the new feed is published."
+          else
+            echo "Reminder issue already open"
+          fi
