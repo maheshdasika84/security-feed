@@ -1,5 +1,4 @@
 {
-  "feed_version": "2026.09.25-v1",
   "signatures": [
     {
       "sha256": "f10cbb2e0f40d7c0f16f5c8ff77c0cecf4dd91f5aa86f68cfaebae8ef2b8df1b",
@@ -40,13 +39,14 @@
       "desc": "Steam community credential stealer clone."
     }
   },
+  "feed_version": "2026.10.11-v1",
   "metadata": {
     "key_id": "k2",
-    "issued_at": 1790358838,
-    "expires_at": 1791568438,
+    "issued_at": 1791733758,
+    "expires_at": 1792943358,
     "revoked_key_ids": [
       "k1"
     ]
   },
-  "signature": "4815691aff871350007cfcc586ba2dba4ae37fd64675fd5124437034f11dd34b2f1a5849e8a806a0dbe36762ee5e6a18084deb60e4dd595e2e4d7ca56547ff0d"
+  "signature": "2acdf3b9179256c467a65ffe9a8bd1898fb75e22124ec2b818e7c33a4e9f844f52b42e394d5fac374e6a2d3a01805da884581b6bc204742ea660c3feed5dfe04"
 }
