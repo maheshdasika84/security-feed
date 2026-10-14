@@ -39,14 +39,14 @@
       "desc": "Steam community credential stealer clone."
     }
   },
-  "feed_version": "2026.10.11-v1",
+  "feed_version": "2026.10.14-v1",
   "metadata": {
     "key_id": "k2",
-    "issued_at": 1791733758,
-    "expires_at": 1792943358,
+    "issued_at": 1791958860,
+    "expires_at": 1793168460,
     "revoked_key_ids": [
       "k1"
     ]
   },
-  "signature": "2acdf3b9179256c467a65ffe9a8bd1898fb75e22124ec2b818e7c33a4e9f844f52b42e394d5fac374e6a2d3a01805da884581b6bc204742ea660c3feed5dfe04"
+  "signature": "c1e1baf51a6c0ef13d3e02892a314d1e4bed02dde5e57c69395526d19389bb08d667abb2cc3da8f009fea084350168d87532e66457f2b77a4836908fc5b3d709"
 }
