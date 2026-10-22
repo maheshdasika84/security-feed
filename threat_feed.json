@@ -1,52 +1,2478 @@
 {
-  "signatures": [
-    {
-      "sha256": "f10cbb2e0f40d7c0f16f5c8ff77c0cecf4dd91f5aa86f68cfaebae8ef2b8df1b",
-      "name": "Trojan.AgentTesla",
-      "type": "Keylogger / Credential Stealer",
-      "severity": "Critical",
-      "desc": "Advanced information stealer targeting browser credentials."
-    },
-    {
-      "sha256": "b9687e3be992c68f760e42d7be83cb1bb91e1d034293f0b2da5f9d7f45778844",
-      "name": "Ransom.BlackCat",
-      "type": "Ransomware",
-      "severity": "Critical",
-      "desc": "ALPHV/BlackCat cross-platform corporate encryptor."
-    },
-    {
-      "sha256": "a3b9837f6eb052b61efc2763f034f71587d1ea2e6833ef7e98a3e7436b7b2501",
-      "name": "Worm.RaspberryRobin",
-      "type": "USB Worm",
-      "severity": "High",
-      "desc": "USB-propagating initial access worm utilizing LNK droppers."
-    }
-  ],
   "domains": {
-    "login-secure-appleid.biz": {
-      "type": "Phishing",
-      "severity": "Critical",
-      "desc": "Apple ID cloud credential harvesting clone."
+    "6krhuxhtp0k5.bestminecraftplayer.fun": {
+      "desc": "Hades botnet_cc first seen 2026-10-20 05:13:36 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974788/",
+      "type": "C2"
     },
-    "metamask-synchronize-portal.live": {
-      "type": "Crypto Phishing",
-      "severity": "Critical",
-      "desc": "Deceptive Web3 seed phrase drainer."
+    "7k.iakmialor.web.id": {
+      "desc": "Vidar botnet_cc first seen 2026-10-16 10:49:12 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969354/",
+      "type": "C2"
+    },
+    "8-hhh.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 11:05:25 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971072/",
+      "type": "C2"
+    },
+    "98winnnn.online": {
+      "desc": "AsyncRAT botnet_cc first seen 2026-10-20 13:20:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1975797/",
+      "type": "C2"
+    },
+    "aloemqvnth.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970949/",
+      "type": "C2"
+    },
+    "andromeda-d389d.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973620/",
+      "type": "C2"
+    },
+    "aneldhasy.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970927/",
+      "type": "C2"
+    },
+    "anhwsoowoe.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970926/",
+      "type": "C2"
+    },
+    "api.failproxy.space": {
+      "desc": "Stealc botnet_cc first seen 2026-10-16 06:10:31 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968846/",
+      "type": "C2"
+    },
+    "arkwemiinoex.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970930/",
+      "type": "C2"
+    },
+    "articio.top": {
+      "desc": "ValleyRAT botnet_cc first seen 2026-10-20 05:45:27 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1975074/",
+      "type": "C2"
+    },
+    "atiagwcvltealv.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970919/",
+      "type": "C2"
+    },
+    "audit.bitfetch.cc": {
+      "desc": "ACR Stealer botnet_cc first seen 2026-10-19 15:12:30 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974396/",
+      "type": "C2"
+    },
+    "b.7sot.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 08:59:43 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971083/",
+      "type": "C2"
+    },
+    "backdoor.61116222b2.buzz": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:33 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969544/",
+      "type": "C2"
+    },
+    "backdoor.afribus.co": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:32 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969541/",
+      "type": "C2"
+    },
+    "backdoor.doyanslot.us": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:33 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969543/",
+      "type": "C2"
+    },
+    "backdoor.fifa55hr.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:33 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969542/",
+      "type": "C2"
+    },
+    "backdoor.fifa55red.me": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:34 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969545/",
+      "type": "C2"
+    },
+    "backdoor.qh88eu.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:32 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969539/",
+      "type": "C2"
+    },
+    "bcopleesr.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970908/",
+      "type": "C2"
+    },
+    "bellows.pics": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:43 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970658/",
+      "type": "C2"
+    },
+    "bestminecraftplayer.fun": {
+      "desc": "Hades botnet_cc first seen 2026-10-20 05:13:35 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974789/",
+      "type": "C2"
+    },
+    "buillingereio.com": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:23 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970788/",
+      "type": "C2"
+    },
+    "cdn.img.76e1e5fa.pnalumni.dgitd.anchorbolnorth.com": {
+      "desc": "Cobalt Strike botnet_cc first seen 2026-10-19 13:01:51 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974269/",
+      "type": "C2"
+    },
+    "cdn.wovplaying.help": {
+      "desc": "SalatStealer payload_delivery first seen 2026-10-17 05:33:04 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970539/",
+      "type": "Malware distribution"
+    },
+    "cnd.bagsrad.com": {
+      "desc": "Quasar RAT botnet_cc first seen 2026-10-19 07:50:26 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973977/",
+      "type": "C2"
+    },
+    "dadhettniaedas.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970939/",
+      "type": "C2"
+    },
+    "deushack.org": {
+      "desc": "donut_injector payload_delivery first seen 2026-10-19 13:55:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974343/",
+      "type": "Malware distribution"
+    },
+    "dns.bagsrad.com": {
+      "desc": "Quasar RAT botnet_cc first seen 2026-10-19 07:50:26 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973976/",
+      "type": "C2"
+    },
+    "edeooigg.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970920/",
+      "type": "C2"
+    },
+    "eeithfaeue.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970950/",
+      "type": "C2"
+    },
+    "eelifjdoeae.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970910/",
+      "type": "C2"
+    },
+    "ejtteyte.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970912/",
+      "type": "C2"
+    },
+    "eortxnrra.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970936/",
+      "type": "C2"
+    },
+    "eporiaeal.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970925/",
+      "type": "C2"
+    },
+    "financiales-groupe.com": {
+      "desc": "Cobalt Strike botnet_cc first seen 2026-10-16 15:45:51 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970050/",
+      "type": "C2"
+    },
+    "finikasi.homes": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:49 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970654/",
+      "type": "C2"
+    },
+    "firstalwayshere.com": {
+      "desc": "WARDENStealer payload_delivery first seen 2026-10-17 05:32:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970790/",
+      "type": "Malware distribution"
+    },
+    "fmyummk.com": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970789/",
+      "type": "C2"
+    },
+    "fr.8mytogel.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971103/",
+      "type": "C2"
     },
     "free-steam-gifts-promo.site": {
-      "type": "Scam / Phishing",
+      "desc": "Steam community credential stealer clone.",
       "severity": "High",
-      "desc": "Steam community credential stealer clone."
+      "type": "Scam / Phishing"
+    },
+    "gdalla.pics": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:45 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970656/",
+      "type": "C2"
+    },
+    "ghostx-panel-default-rtdb.firebaseio.com": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:04 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972782/",
+      "type": "C2"
+    },
+    "ghostx-panel.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:03 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972783/",
+      "type": "C2"
+    },
+    "gwgamior.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970946/",
+      "type": "C2"
+    },
+    "happyslot88pg.co": {
+      "desc": "AsyncRAT botnet_cc first seen 2026-10-16 12:20:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969571/",
+      "type": "C2"
+    },
+    "hdfc-bank-8ab58-default-rtdb.firebaseio.com": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973617/",
+      "type": "C2"
+    },
+    "hdfc-bank-8ab58.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973618/",
+      "type": "C2"
+    },
+    "hjoeseiatehn.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970916/",
+      "type": "C2"
+    },
+    "hotuehett.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970948/",
+      "type": "C2"
+    },
+    "hruieeoefeor.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970911/",
+      "type": "C2"
+    },
+    "hsjornoboetotl.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970945/",
+      "type": "C2"
+    },
+    "index.searchchinas.top": {
+      "desc": "Cobalt Strike botnet_cc first seen 2026-10-17 03:45:41 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970804/",
+      "type": "C2"
+    },
+    "iowheuhle.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970938/",
+      "type": "C2"
+    },
+    "isnhituoyioe.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970933/",
+      "type": "C2"
+    },
+    "italleatgeeash.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970923/",
+      "type": "C2"
+    },
+    "jksdjkjs.cc": {
+      "desc": "ValleyRAT botnet_cc first seen 2026-10-16 07:20:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969160/",
+      "type": "C2"
+    },
+    "ju.8-hhh.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971102/",
+      "type": "C2"
+    },
+    "k.88mdc.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971105/",
+      "type": "C2"
+    },
+    "kingremcos2026.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-20 14:25:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1975882/",
+      "type": "C2"
+    },
+    "kjhg.lol": {
+      "desc": "Hermes botnet_cc first seen 2026-10-19 06:20:10 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973895/",
+      "type": "C2"
+    },
+    "kjhg.shop": {
+      "desc": "Hermes botnet_cc first seen 2026-10-19 06:20:09 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973896/",
+      "type": "C2"
+    },
+    "krakiiatoe.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970921/",
+      "type": "C2"
+    },
+    "l.7sot.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 08:59:43 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971084/",
+      "type": "C2"
+    },
+    "lagbout6ouisft01.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:28 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969580/",
+      "type": "C2"
+    },
+    "lagbout6ouisft02.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:28 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969581/",
+      "type": "C2"
+    },
+    "lagbout6ouisft03.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:29 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969582/",
+      "type": "C2"
+    },
+    "lagbout6ouisft04.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:29 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969583/",
+      "type": "C2"
+    },
+    "lagbout6ouisft05.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:29 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969584/",
+      "type": "C2"
+    },
+    "lgeioayhrehsoa.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970909/",
+      "type": "C2"
+    },
+    "login-secure-appleid.biz": {
+      "desc": "Apple ID cloud credential harvesting clone.",
+      "severity": "Critical",
+      "type": "Phishing"
+    },
+    "m3.888-fw.com": {
+      "desc": "Vidar botnet_cc first seen 2026-10-16 06:34:46 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968967/",
+      "type": "C2"
+    },
+    "metamask-synchronize-portal.live": {
+      "desc": "Deceptive Web3 seed phrase drainer.",
+      "severity": "Critical",
+      "type": "Crypto Phishing"
+    },
+    "model.bytedrop.cc": {
+      "desc": "ACR Stealer botnet_cc first seen 2026-10-19 09:23:56 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974168/",
+      "type": "C2"
+    },
+    "mparivahan.hs.vc": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:02 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972786/",
+      "type": "C2"
+    },
+    "mparivahan772.s.gy": {
+      "desc": "SMSspy payload_delivery first seen 2026-10-19 06:20:53 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973185/",
+      "type": "Malware distribution"
+    },
+    "mparivahansms-default-rtdb.asia-southeast1.firebasedatabase.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:19 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973615/",
+      "type": "C2"
+    },
+    "mparivahansms.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973616/",
+      "type": "C2"
+    },
+    "myuse-60542-default-rtdb.asia-southeast1.firebasedatabase.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:03 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972784/",
+      "type": "C2"
+    },
+    "myuse-60542.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:03 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972785/",
+      "type": "C2"
+    },
+    "neekxhkta.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970922/",
+      "type": "C2"
+    },
+    "nexus-panel.in": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:04 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972781/",
+      "type": "C2"
+    },
+    "nnnoeogotiitso.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970941/",
+      "type": "C2"
+    },
+    "nsx1-7f7aa-default-rtdb.asia-southeast1.firebasedatabase.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973588/",
+      "type": "C2"
+    },
+    "nsx1-7f7aa.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:20 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973589/",
+      "type": "C2"
+    },
+    "ntneioehnetsae.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970942/",
+      "type": "C2"
+    },
+    "oalaoiodgne.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970947/",
+      "type": "C2"
+    },
+    "oatrafoateeve.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970917/",
+      "type": "C2"
+    },
+    "oldisgoldgameis.com": {
+      "desc": "WARDENStealer payload_delivery first seen 2026-10-17 05:32:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970791/",
+      "type": "Malware distribution"
+    },
+    "panel-sms.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973619/",
+      "type": "C2"
+    },
+    "pgieohops.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970924/",
+      "type": "C2"
+    },
+    "pm44.gotdns.ch": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 13:10:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974318/",
+      "type": "C2"
+    },
+    "pulsge.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968262/",
+      "type": "C2"
+    },
+    "qmmrenctaq.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970944/",
+      "type": "C2"
+    },
+    "randlain.mom": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:46 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970655/",
+      "type": "C2"
+    },
+    "rembxp.top": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 13:10:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974319/",
+      "type": "C2"
+    },
+    "rshtgesa.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970929/",
+      "type": "C2"
+    },
+    "satinett.pics": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:42 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970659/",
+      "type": "C2"
+    },
+    "shopvumanhcuong.com": {
+      "desc": "AsyncRAT botnet_cc first seen 2026-10-20 06:40:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1975132/",
+      "type": "C2"
+    },
+    "sirucxaian.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970907/",
+      "type": "C2"
+    },
+    "skahfy.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968263/",
+      "type": "C2"
+    },
+    "slotwallet777.co": {
+      "desc": "AsyncRAT botnet_cc first seen 2026-10-19 13:00:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974305/",
+      "type": "C2"
+    },
+    "snjimghnferfa.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970943/",
+      "type": "C2"
+    },
+    "sodsce.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968264/",
+      "type": "C2"
+    },
+    "sparfk.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968265/",
+      "type": "C2"
+    },
+    "speeoporj.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970932/",
+      "type": "C2"
+    },
+    "srroolreoaar.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970914/",
+      "type": "C2"
+    },
+    "ssewciriwu.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970928/",
+      "type": "C2"
+    },
+    "stpata.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968266/",
+      "type": "C2"
+    },
+    "straely.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968267/",
+      "type": "C2"
+    },
+    "summxif.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968268/",
+      "type": "C2"
+    },
+    "synerfy.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968269/",
+      "type": "C2"
+    },
+    "t.88mdc.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971104/",
+      "type": "C2"
+    },
+    "tahinhtfenwimi.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970931/",
+      "type": "C2"
+    },
+    "teeoklnhrntgj.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970940/",
+      "type": "C2"
+    },
+    "teiittoeg.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970937/",
+      "type": "C2"
+    },
+    "tfhhegbi.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970934/",
+      "type": "C2"
+    },
+    "tiumloir.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970913/",
+      "type": "C2"
+    },
+    "trexnd.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968270/",
+      "type": "C2"
+    },
+    "trucnher.skin": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:43 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970657/",
+      "type": "C2"
+    },
+    "u.86idn.com": {
+      "desc": "Vidar botnet_cc first seen 2026-10-16 06:34:49 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968955/",
+      "type": "C2"
+    },
+    "u973.cantdown.su": {
+      "desc": "XWorm botnet_cc first seen 2026-10-20 16:21:47 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1976080/",
+      "type": "C2"
+    },
+    "uffhtyiqtmiea.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970918/",
+      "type": "C2"
+    },
+    "upi.log.30ca777733df8aa6e4404bd8beadb65c36105e9346e15819152e9ecc4.fd746f6f221867dd6d504e00569cc108bbf5c5e0daf7628d26285775.86174a0a1dc3dd1625fc62e486572c26425c95ffef342f6dddb5ffe0.1b1f3f2edc.7605f6.pnalumni.dgitd.anchorbolnorth.com": {
+      "desc": "Cobalt Strike botnet_cc first seen 2026-10-19 13:01:49 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974270/",
+      "type": "C2"
+    },
+    "usefilebox.com": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:33:07 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970483/",
+      "type": "C2"
+    },
+    "vangrd.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968271/",
+      "type": "C2"
+    },
+    "vedfex.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968272/",
+      "type": "C2"
+    },
+    "veldty.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968273/",
+      "type": "C2"
+    },
+    "vewknyie.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970915/",
+      "type": "C2"
+    },
+    "vfrtegx.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968274/",
+      "type": "C2"
+    },
+    "vistda.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968275/",
+      "type": "C2"
+    },
+    "webnghean.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:29 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969532/",
+      "type": "C2"
+    },
+    "www.jennywilliamlogistics.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973913/",
+      "type": "C2"
+    },
+    "www.jennywilliamlogisticsbackup.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973914/",
+      "type": "C2"
+    },
+    "www.jennywilliamlogisticsbackup1.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973915/",
+      "type": "C2"
+    },
+    "www.jennywilliamlogisticsbackup2.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:25 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973916/",
+      "type": "C2"
+    },
+    "www.xmmtbxbackup3.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 17:40:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970206/",
+      "type": "C2"
+    },
+    "www.xmmtbxbackup4.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 17:40:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970207/",
+      "type": "C2"
+    },
+    "xitldefl.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970935/",
+      "type": "C2"
+    },
+    "xxx.sytes.net": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 13:10:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974317/",
+      "type": "C2"
+    },
+    "zn.8-hhh.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 11:05:25 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971071/",
+      "type": "C2"
     }
   },
-  "feed_version": "2026.10.14-v1",
+  "feed_version": "2026.10.20-v1",
+  "signatures": [
+    {
+      "desc": "Advanced information stealer targeting browser credentials.",
+      "name": "Trojan.AgentTesla",
+      "severity": "Critical",
+      "sha256": "f10cbb2e0f40d7c0f16f5c8ff77c0cecf4dd91f5aa86f68cfaebae8ef2b8df1b",
+      "type": "Keylogger / Credential Stealer"
+    },
+    {
+      "desc": "ALPHV/BlackCat cross-platform corporate encryptor.",
+      "name": "Ransom.BlackCat",
+      "severity": "Critical",
+      "sha256": "b9687e3be992c68f760e42d7be83cb1bb91e1d034293f0b2da5f9d7f45778844",
+      "type": "Ransomware"
+    },
+    {
+      "desc": "USB-propagating initial access worm utilizing LNK droppers.",
+      "name": "Worm.RaspberryRobin",
+      "severity": "High",
+      "sha256": "a3b9837f6eb052b61efc2763f034f71587d1ea2e6833ef7e98a3e7436b7b2501",
+      "type": "USB Worm"
+    },
+    {
+      "desc": "Joker sample first seen 2026-10-15 16:39:54 UTC (MalwareBazaar)",
+      "name": "Android.Joker",
+      "severity": "High",
+      "sha256": "2fa0f3893ca8fff0ba2c2e30d0ba35712ec5dffa27ebe1b87b4a26cb4f7d0aa4",
+      "source_url": "https://bazaar.abuse.ch/sample/2fa0f3893ca8fff0ba2c2e30d0ba35712ec5dffa27ebe1b87b4a26cb4f7d0aa4/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SloppyRAT sample first seen 2026-10-17 10:16:13 UTC (MalwareBazaar)",
+      "name": "Win.SloppyRAT",
+      "severity": "High",
+      "sha256": "cad87a2bdf74ccedf166c7578ad7080987fede2dacefb6420b948f495a6064f2",
+      "source_url": "https://bazaar.abuse.ch/sample/cad87a2bdf74ccedf166c7578ad7080987fede2dacefb6420b948f495a6064f2/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-17 09:54:49 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "4f3ac1ab04e715991704cf687540b7aca1143b321a1b0aa189701a9448cd2e58",
+      "source_url": "https://bazaar.abuse.ch/sample/4f3ac1ab04e715991704cf687540b7aca1143b321a1b0aa189701a9448cd2e58/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-17 09:54:46 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "42336d64714068611e435aae0449170dcecdebf8c6dfe6f0adfa89d350b9fef0",
+      "source_url": "https://bazaar.abuse.ch/sample/42336d64714068611e435aae0449170dcecdebf8c6dfe6f0adfa89d350b9fef0/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RustyStealer sample first seen 2026-10-17 09:47:58 UTC (MalwareBazaar)",
+      "name": "Win.RustyStealer",
+      "severity": "High",
+      "sha256": "d8db14b06fc3cac3e3c9126878fe44cf08df419da8e442752d07602b1ec52943",
+      "source_url": "https://bazaar.abuse.ch/sample/d8db14b06fc3cac3e3c9126878fe44cf08df419da8e442752d07602b1ec52943/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-17 09:45:22 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "4f2e3fe1eda886a51aae0edd07dcdaf56c9ff94c2d43abb06d4f52d105b2f8d0",
+      "source_url": "https://bazaar.abuse.ch/sample/4f2e3fe1eda886a51aae0edd07dcdaf56c9ff94c2d43abb06d4f52d105b2f8d0/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-17 09:45:22 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "558e03eac1447357d1d9ccc6a18804536600727e3ca4acb72db5b55409e6222c",
+      "source_url": "https://bazaar.abuse.ch/sample/558e03eac1447357d1d9ccc6a18804536600727e3ca4acb72db5b55409e6222c/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ValleyRAT sample first seen 2026-10-17 09:19:15 UTC (MalwareBazaar)",
+      "name": "Win.ValleyRAT",
+      "severity": "High",
+      "sha256": "f211eb4e9b7cfab20d5e4b747a8b4b5a1a1f4aade39621a559c5715ec4fcea86",
+      "source_url": "https://bazaar.abuse.ch/sample/f211eb4e9b7cfab20d5e4b747a8b4b5a1a1f4aade39621a559c5715ec4fcea86/",
+      "type": "Malware"
+    },
+    {
+      "desc": "DCAgentRMM sample first seen 2026-10-17 09:04:12 UTC (MalwareBazaar)",
+      "name": "Win.DCAgentRMM",
+      "severity": "High",
+      "sha256": "1d3a8ba207ff46723b5171561ba0e1f99b2f2a0a655a5699c1cf49435f67d7b5",
+      "source_url": "https://bazaar.abuse.ch/sample/1d3a8ba207ff46723b5171561ba0e1f99b2f2a0a655a5699c1cf49435f67d7b5/",
+      "type": "Malware"
+    },
+    {
+      "desc": "AsyncRAT sample first seen 2026-10-17 09:00:11 UTC (MalwareBazaar)",
+      "name": "Win.AsyncRAT",
+      "severity": "High",
+      "sha256": "00fb522f8d19a1ee3fa1d23c55d55134454fb9067474d836dfd9019c948d0e9e",
+      "source_url": "https://bazaar.abuse.ch/sample/00fb522f8d19a1ee3fa1d23c55d55134454fb9067474d836dfd9019c948d0e9e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-17 08:57:34 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "df23fcc6c9b57d69983761adb3977da6f6d0c35a81503bb17d9d94f92146353c",
+      "source_url": "https://bazaar.abuse.ch/sample/df23fcc6c9b57d69983761adb3977da6f6d0c35a81503bb17d9d94f92146353c/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-17 08:57:22 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "0667e459fd54a7467f91ef82d5ed580f80e8887e344035abeb748b8c68298802",
+      "source_url": "https://bazaar.abuse.ch/sample/0667e459fd54a7467f91ef82d5ed580f80e8887e344035abeb748b8c68298802/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-17 07:33:06 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "40e5f2ec51e87982e9086a66ed4471e6eaf329bad4bf0f451c7816c5d57ef8e8",
+      "source_url": "https://bazaar.abuse.ch/sample/40e5f2ec51e87982e9086a66ed4471e6eaf329bad4bf0f451c7816c5d57ef8e8/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-17 07:33:06 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "f48c7b7e0d129271d2d683ecf3df997ef8abd7cdb808f770cbd9aed2703ceecc",
+      "source_url": "https://bazaar.abuse.ch/sample/f48c7b7e0d129271d2d683ecf3df997ef8abd7cdb808f770cbd9aed2703ceecc/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RemcosRAT sample first seen 2026-10-17 06:50:13 UTC (MalwareBazaar)",
+      "name": "Win.RemcosRAT",
+      "severity": "High",
+      "sha256": "7f98634c81ada016093032eec6aca74bc1c72be595a660b2a54a8528934afa2d",
+      "source_url": "https://bazaar.abuse.ch/sample/7f98634c81ada016093032eec6aca74bc1c72be595a660b2a54a8528934afa2d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "NanoCore sample first seen 2026-10-17 05:30:08 UTC (MalwareBazaar)",
+      "name": "Win.NanoCore",
+      "severity": "High",
+      "sha256": "f9ec15f5b5115f2c81426e36f82f155bd174493d12cf535eec06613d62e9ec94",
+      "source_url": "https://bazaar.abuse.ch/sample/f9ec15f5b5115f2c81426e36f82f155bd174493d12cf535eec06613d62e9ec94/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-17 05:24:01 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "d294acac443dd491a8d5c4daccb444bc2cb73145d87ff0c0ffdf7ee030035add",
+      "source_url": "https://bazaar.abuse.ch/sample/d294acac443dd491a8d5c4daccb444bc2cb73145d87ff0c0ffdf7ee030035add/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Adware.Generic sample first seen 2026-10-17 04:26:11 UTC (MalwareBazaar)",
+      "name": "Win.Adware.Generic",
+      "severity": "High",
+      "sha256": "7ad81cd5580035c6e048d12a76a82b85b0f3278cedf9f55c6fceab171820cfd2",
+      "source_url": "https://bazaar.abuse.ch/sample/7ad81cd5580035c6e048d12a76a82b85b0f3278cedf9f55c6fceab171820cfd2/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 03:34:30 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "679372386b687d4aa79d13af9e2929cdfd1ab1e388eaeac1a31c81f08ad84c37",
+      "source_url": "https://bazaar.abuse.ch/sample/679372386b687d4aa79d13af9e2929cdfd1ab1e388eaeac1a31c81f08ad84c37/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 03:34:22 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "2b4bb4ab724ee6f0741b9366fb6e8ceda68d4cbbd4bb2aed74a7c21cd28c63cb",
+      "source_url": "https://bazaar.abuse.ch/sample/2b4bb4ab724ee6f0741b9366fb6e8ceda68d4cbbd4bb2aed74a7c21cd28c63cb/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 03:34:14 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "bd90b742908dec4cd7a1ab54cc6b3e7e36498ee112fd788c1679471eccc59a95",
+      "source_url": "https://bazaar.abuse.ch/sample/bd90b742908dec4cd7a1ab54cc6b3e7e36498ee112fd788c1679471eccc59a95/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 03:34:06 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "3f497026432633757122a8b5a6565b6aef2e1286af56e09d3374aa24c3b525bc",
+      "source_url": "https://bazaar.abuse.ch/sample/3f497026432633757122a8b5a6565b6aef2e1286af56e09d3374aa24c3b525bc/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 03:33:59 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "4d4fbdc2366d9c4488d02a12aadc4596b05f3e0b8f855e679bfc425aae3aa72f",
+      "source_url": "https://bazaar.abuse.ch/sample/4d4fbdc2366d9c4488d02a12aadc4596b05f3e0b8f855e679bfc425aae3aa72f/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 03:33:49 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "7aa8a13432f1999f37809e8576ea7e442d57e1902e991d11dedbfbdfc156a3de",
+      "source_url": "https://bazaar.abuse.ch/sample/7aa8a13432f1999f37809e8576ea7e442d57e1902e991d11dedbfbdfc156a3de/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 03:33:41 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "1c2f944aa593e4d55343ed4ec5074160ee8a85bfb5b551ee734e6f26b1a95bf4",
+      "source_url": "https://bazaar.abuse.ch/sample/1c2f944aa593e4d55343ed4ec5074160ee8a85bfb5b551ee734e6f26b1a95bf4/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 03:33:32 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "afb1126f9454e8b94376b43cd09200b971ff39ffcaed57c2f55e133e41c36e6d",
+      "source_url": "https://bazaar.abuse.ch/sample/afb1126f9454e8b94376b43cd09200b971ff39ffcaed57c2f55e133e41c36e6d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-17 03:22:22 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "e9af652d27614eb8a76788f0537350c3ec8aa23da38e8a57599cab1791c74c78",
+      "source_url": "https://bazaar.abuse.ch/sample/e9af652d27614eb8a76788f0537350c3ec8aa23da38e8a57599cab1791c74c78/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-17 03:22:18 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "37ddd1a7b72fdb4986d966157ac085035b32d8cc3f84edef61808dec7158e12f",
+      "source_url": "https://bazaar.abuse.ch/sample/37ddd1a7b72fdb4986d966157ac085035b32d8cc3f84edef61808dec7158e12f/",
+      "type": "Malware"
+    },
+    {
+      "desc": "NanoCore sample first seen 2026-10-17 02:35:07 UTC (MalwareBazaar)",
+      "name": "Win.NanoCore",
+      "severity": "High",
+      "sha256": "3425587876d45c0a1eaea90741b0f1a8e490af891ce848bfc5b685683a6d2533",
+      "source_url": "https://bazaar.abuse.ch/sample/3425587876d45c0a1eaea90741b0f1a8e490af891ce848bfc5b685683a6d2533/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 01:36:24 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "07a491805b23d8ebf039f56c43107261a6d3a2014ae39ec513dfb4415220ca73",
+      "source_url": "https://bazaar.abuse.ch/sample/07a491805b23d8ebf039f56c43107261a6d3a2014ae39ec513dfb4415220ca73/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-17 01:35:01 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "cefd574917e8625d7e43d210ce4a473e068210f944d998335feac56d02a63f7e",
+      "source_url": "https://bazaar.abuse.ch/sample/cefd574917e8625d7e43d210ce4a473e068210f944d998335feac56d02a63f7e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-17 00:26:24 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "fbeacf6c0412e4a610b4dcde1d6156c18dccf100003799ccc0703069e0419786",
+      "source_url": "https://bazaar.abuse.ch/sample/fbeacf6c0412e4a610b4dcde1d6156c18dccf100003799ccc0703069e0419786/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-17 00:26:09 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "975f5c0dd3dc7fc5ad3c42c296fc44dca55dfc9480b9335752cc4e099d93bcf2",
+      "source_url": "https://bazaar.abuse.ch/sample/975f5c0dd3dc7fc5ad3c42c296fc44dca55dfc9480b9335752cc4e099d93bcf2/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ValleyRAT sample first seen 2026-10-17 00:15:11 UTC (MalwareBazaar)",
+      "name": "Win.ValleyRAT",
+      "severity": "High",
+      "sha256": "d76706ec1ef248c678aeb8bf6484e2f8f6822d0d537dbce2be1de23045e65ae6",
+      "source_url": "https://bazaar.abuse.ch/sample/d76706ec1ef248c678aeb8bf6484e2f8f6822d0d537dbce2be1de23045e65ae6/",
+      "type": "Malware"
+    },
+    {
+      "desc": "BridgeAgent sample first seen 2026-10-16 23:29:13 UTC (MalwareBazaar)",
+      "name": "Win.BridgeAgent",
+      "severity": "High",
+      "sha256": "ce1eb64fc04650f2e124bbae21a41cbaaf6e583c5b8783e2519fada7f6e8e957",
+      "source_url": "https://bazaar.abuse.ch/sample/ce1eb64fc04650f2e124bbae21a41cbaaf6e583c5b8783e2519fada7f6e8e957/",
+      "type": "Malware"
+    },
+    {
+      "desc": "GhostPulse sample first seen 2026-10-16 23:24:30 UTC (MalwareBazaar)",
+      "name": "Win.GhostPulse",
+      "severity": "High",
+      "sha256": "e1c4d064c1353ba75771662a61b7b529d4a206aa3cce1d5ca6529c53ab8b0946",
+      "source_url": "https://bazaar.abuse.ch/sample/e1c4d064c1353ba75771662a61b7b529d4a206aa3cce1d5ca6529c53ab8b0946/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-16 23:06:09 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "1f01ff480f1e0efd0361c7647b1d8de8b8a0b086a4864fe7d65f1ab8f1997c31",
+      "source_url": "https://bazaar.abuse.ch/sample/1f01ff480f1e0efd0361c7647b1d8de8b8a0b086a4864fe7d65f1ab8f1997c31/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RemusStealer sample first seen 2026-10-16 21:47:41 UTC (MalwareBazaar)",
+      "name": "Win.RemusStealer",
+      "severity": "High",
+      "sha256": "b83b95f0e9dadbd328e5488a244e12f3ca93eb1edbf6af6eae50c11df356a46d",
+      "source_url": "https://bazaar.abuse.ch/sample/b83b95f0e9dadbd328e5488a244e12f3ca93eb1edbf6af6eae50c11df356a46d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-16 20:35:37 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "5d025ebb4893f8ecf8d0af727d7fe2fd2c98adf0142f695ab859ca2606f3a195",
+      "source_url": "https://bazaar.abuse.ch/sample/5d025ebb4893f8ecf8d0af727d7fe2fd2c98adf0142f695ab859ca2606f3a195/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Amadey sample first seen 2026-10-16 20:31:36 UTC (MalwareBazaar)",
+      "name": "Win.Amadey",
+      "severity": "High",
+      "sha256": "1a00af227d24587928c0a173564f0e014ba058cd2e9a19e258e1f06ae94f493b",
+      "source_url": "https://bazaar.abuse.ch/sample/1a00af227d24587928c0a173564f0e014ba058cd2e9a19e258e1f06ae94f493b/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SalatStealer sample first seen 2026-10-16 20:10:46 UTC (MalwareBazaar)",
+      "name": "Win.SalatStealer",
+      "severity": "High",
+      "sha256": "517e2b7b2027e868f01722d53d5b0bfbc4436258fa189d9430e3535ae390f2f4",
+      "source_url": "https://bazaar.abuse.ch/sample/517e2b7b2027e868f01722d53d5b0bfbc4436258fa189d9430e3535ae390f2f4/",
+      "type": "Malware"
+    },
+    {
+      "desc": "GCleaner sample first seen 2026-10-16 19:52:07 UTC (MalwareBazaar)",
+      "name": "Win.GCleaner",
+      "severity": "High",
+      "sha256": "3150cdcdf1e1490b93a27d8d691c259d608995285330f77ff22783bb51c2fc36",
+      "source_url": "https://bazaar.abuse.ch/sample/3150cdcdf1e1490b93a27d8d691c259d608995285330f77ff22783bb51c2fc36/",
+      "type": "Malware"
+    },
+    {
+      "desc": "NetSupport sample first seen 2026-10-16 19:41:27 UTC (MalwareBazaar)",
+      "name": "Win.NetSupport",
+      "severity": "High",
+      "sha256": "2e2b253c3cc9b64cec1d49793f41aba524d7cb766f614ad2647b18aaa6515248",
+      "source_url": "https://bazaar.abuse.ch/sample/2e2b253c3cc9b64cec1d49793f41aba524d7cb766f614ad2647b18aaa6515248/",
+      "type": "Malware"
+    },
+    {
+      "desc": "njrat sample first seen 2026-10-16 19:40:06 UTC (MalwareBazaar)",
+      "name": "Win.njrat",
+      "severity": "High",
+      "sha256": "165619e61ebf6feb78b2b78f1fa407540e71712e6fe8185bb810c8dffd54eaff",
+      "source_url": "https://bazaar.abuse.ch/sample/165619e61ebf6feb78b2b78f1fa407540e71712e6fe8185bb810c8dffd54eaff/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-16 19:23:30 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "463f56104d5b9459918a39fd23d28937c1c7a1f88d8c3b6e48d6755fc0bbb7c7",
+      "source_url": "https://bazaar.abuse.ch/sample/463f56104d5b9459918a39fd23d28937c1c7a1f88d8c3b6e48d6755fc0bbb7c7/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-16 19:22:43 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "1ced32b2b64614f3110efb4712fb65bb06a00518abc28fa261153c15fdd75003",
+      "source_url": "https://bazaar.abuse.ch/sample/1ced32b2b64614f3110efb4712fb65bb06a00518abc28fa261153c15fdd75003/",
+      "type": "Malware"
+    },
+    {
+      "desc": "CoinMiner sample first seen 2026-10-16 19:21:44 UTC (MalwareBazaar)",
+      "name": "Win.CoinMiner",
+      "severity": "High",
+      "sha256": "830e5d53bfe56811b82621c6fe873e404e810ed8e2d409e786377ea211b12a1c",
+      "source_url": "https://bazaar.abuse.ch/sample/830e5d53bfe56811b82621c6fe873e404e810ed8e2d409e786377ea211b12a1c/",
+      "type": "Malware"
+    },
+    {
+      "desc": "CoinMiner sample first seen 2026-10-16 18:46:16 UTC (MalwareBazaar)",
+      "name": "Win.CoinMiner",
+      "severity": "High",
+      "sha256": "5392c321ee22ffdd454802ab8620e11bcc33d5921217a03d057ba41b27d53ee2",
+      "source_url": "https://bazaar.abuse.ch/sample/5392c321ee22ffdd454802ab8620e11bcc33d5921217a03d057ba41b27d53ee2/",
+      "type": "Malware"
+    },
+    {
+      "desc": "BridgeAgent sample first seen 2026-10-16 18:31:54 UTC (MalwareBazaar)",
+      "name": "Win.BridgeAgent",
+      "severity": "High",
+      "sha256": "8f73ed7dd151c3855112be7192d6116493171304aa035dd850c9edcba0ce01e4",
+      "source_url": "https://bazaar.abuse.ch/sample/8f73ed7dd151c3855112be7192d6116493171304aa035dd850c9edcba0ce01e4/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RemcosRAT sample first seen 2026-10-16 17:35:08 UTC (MalwareBazaar)",
+      "name": "Win.RemcosRAT",
+      "severity": "High",
+      "sha256": "ae6e815981ca4ef79e01a1bbaf3927bfc557192c288cb31436ffb9366ef03077",
+      "source_url": "https://bazaar.abuse.ch/sample/ae6e815981ca4ef79e01a1bbaf3927bfc557192c288cb31436ffb9366ef03077/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RemusStealer sample first seen 2026-10-16 17:10:14 UTC (MalwareBazaar)",
+      "name": "Win.RemusStealer",
+      "severity": "High",
+      "sha256": "08302ac73bd9427e59aca76baff9b0c9738618c4a83c014e9a234ecc5bdd1e4e",
+      "source_url": "https://bazaar.abuse.ch/sample/08302ac73bd9427e59aca76baff9b0c9738618c4a83c014e9a234ecc5bdd1e4e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RemusStealer sample first seen 2026-10-16 17:00:13 UTC (MalwareBazaar)",
+      "name": "Win.RemusStealer",
+      "severity": "High",
+      "sha256": "b2e940b3562cacfaaf98cde758f7981b4b18f826f4a0ec302f853eb8e5ac4782",
+      "source_url": "https://bazaar.abuse.ch/sample/b2e940b3562cacfaaf98cde758f7981b4b18f826f4a0ec302f853eb8e5ac4782/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-16 16:37:26 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "4ef9958a07791b8dd453998adf8a1eb443127bd63ae77f4f3b448ef5d5fd6b40",
+      "source_url": "https://bazaar.abuse.ch/sample/4ef9958a07791b8dd453998adf8a1eb443127bd63ae77f4f3b448ef5d5fd6b40/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-16 16:37:22 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "13dd0a262149fa32eeb7a6f4af7264a65684eb524f3874ab79f7b1008892e9fd",
+      "source_url": "https://bazaar.abuse.ch/sample/13dd0a262149fa32eeb7a6f4af7264a65684eb524f3874ab79f7b1008892e9fd/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-16 15:51:41 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "432d35552fab5f79fe7f4af9ea62b2f9e777583d8bff12dda0b1f86b60799243",
+      "source_url": "https://bazaar.abuse.ch/sample/432d35552fab5f79fe7f4af9ea62b2f9e777583d8bff12dda0b1f86b60799243/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ValleyRAT sample first seen 2026-10-16 15:45:56 UTC (MalwareBazaar)",
+      "name": "Win.ValleyRAT",
+      "severity": "High",
+      "sha256": "2935b3d7fe05f60261e5a0d57f78f2b12961126ba4caee260f720d2f15f35d8f",
+      "source_url": "https://bazaar.abuse.ch/sample/2935b3d7fe05f60261e5a0d57f78f2b12961126ba4caee260f720d2f15f35d8f/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ValleyRAT sample first seen 2026-10-16 15:45:12 UTC (MalwareBazaar)",
+      "name": "Win.ValleyRAT",
+      "severity": "High",
+      "sha256": "6f236d7a4f50652e28d57c10445bf1860b414346371b7550282b9192cbb12035",
+      "source_url": "https://bazaar.abuse.ch/sample/6f236d7a4f50652e28d57c10445bf1860b414346371b7550282b9192cbb12035/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ValleyRAT sample first seen 2026-10-16 15:43:54 UTC (MalwareBazaar)",
+      "name": "Win.ValleyRAT",
+      "severity": "High",
+      "sha256": "0398e56d2ebebea6d479420903c0dc52d49cea8f2eb775a26f6915b5a76ae459",
+      "source_url": "https://bazaar.abuse.ch/sample/0398e56d2ebebea6d479420903c0dc52d49cea8f2eb775a26f6915b5a76ae459/",
+      "type": "Malware"
+    },
+    {
+      "desc": "VShell sample first seen 2026-10-16 15:05:18 UTC (MalwareBazaar)",
+      "name": "Win.VShell",
+      "severity": "High",
+      "sha256": "8ae023cbba95eb6b1abd41dd87ef30c767f2f5f4665b1e02c45bf062fbabd9fc",
+      "source_url": "https://bazaar.abuse.ch/sample/8ae023cbba95eb6b1abd41dd87ef30c767f2f5f4665b1e02c45bf062fbabd9fc/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RemusStealer sample first seen 2026-10-16 13:50:11 UTC (MalwareBazaar)",
+      "name": "Win.RemusStealer",
+      "severity": "High",
+      "sha256": "00436a440caaf87f038abf67f023658b8e17be98ded878fe0bc24a5d47bddbd8",
+      "source_url": "https://bazaar.abuse.ch/sample/00436a440caaf87f038abf67f023658b8e17be98ded878fe0bc24a5d47bddbd8/",
+      "type": "Malware"
+    },
+    {
+      "desc": "VShell sample first seen 2026-10-16 13:20:59 UTC (MalwareBazaar)",
+      "name": "Win.VShell",
+      "severity": "High",
+      "sha256": "7243dec4bcca8d217b70ad73de892be30c9d6197eb511c8da8fe7a538956ae45",
+      "source_url": "https://bazaar.abuse.ch/sample/7243dec4bcca8d217b70ad73de892be30c9d6197eb511c8da8fe7a538956ae45/",
+      "type": "Malware"
+    },
+    {
+      "desc": "AsyncRAT sample first seen 2026-10-16 12:16:04 UTC (MalwareBazaar)",
+      "name": "Win.AsyncRAT",
+      "severity": "High",
+      "sha256": "ebb2f6d9ee6731d87d430b7c9114d4fa02ffb5adba565da3ffda7cca0afb2353",
+      "source_url": "https://bazaar.abuse.ch/sample/ebb2f6d9ee6731d87d430b7c9114d4fa02ffb5adba565da3ffda7cca0afb2353/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RemcosRAT sample first seen 2026-10-16 11:51:46 UTC (MalwareBazaar)",
+      "name": "Win.RemcosRAT",
+      "severity": "High",
+      "sha256": "b08bff811d20fb95abbb8a09175f33a749c1dff6967b86e583ba5f5ee08872e5",
+      "source_url": "https://bazaar.abuse.ch/sample/b08bff811d20fb95abbb8a09175f33a749c1dff6967b86e583ba5f5ee08872e5/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ValleyRAT sample first seen 2026-10-16 11:51:32 UTC (MalwareBazaar)",
+      "name": "Win.ValleyRAT",
+      "severity": "High",
+      "sha256": "ca47e13a2980817e7849ddfef70312542ed11efaeba7b1b583161c06a440baf2",
+      "source_url": "https://bazaar.abuse.ch/sample/ca47e13a2980817e7849ddfef70312542ed11efaeba7b1b583161c06a440baf2/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Prometei sample first seen 2026-10-16 11:40:10 UTC (MalwareBazaar)",
+      "name": "Win.Prometei",
+      "severity": "High",
+      "sha256": "0cb4cfb991e82c52a7904bc6cee3c10eac1adb6bf84cbbfd0b2629d0aa35781a",
+      "source_url": "https://bazaar.abuse.ch/sample/0cb4cfb991e82c52a7904bc6cee3c10eac1adb6bf84cbbfd0b2629d0aa35781a/",
+      "type": "Malware"
+    },
+    {
+      "desc": "MassLogger sample first seen 2026-10-16 10:50:13 UTC (MalwareBazaar)",
+      "name": "Win.MassLogger",
+      "severity": "High",
+      "sha256": "2b95efac36c55a5cd0d175c2ed141a1b0651319e5b94904c640497c4e008953d",
+      "source_url": "https://bazaar.abuse.ch/sample/2b95efac36c55a5cd0d175c2ed141a1b0651319e5b94904c640497c4e008953d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RevStealer sample first seen 2026-10-16 10:26:19 UTC (MalwareBazaar)",
+      "name": "Win.RevStealer",
+      "severity": "High",
+      "sha256": "c531aeae347d7316d50f815c598d192a1415d95df9783df05aa9c6a490e629a0",
+      "source_url": "https://bazaar.abuse.ch/sample/c531aeae347d7316d50f815c598d192a1415d95df9783df05aa9c6a490e629a0/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RevStealer sample first seen 2026-10-16 10:26:07 UTC (MalwareBazaar)",
+      "name": "Win.RevStealer",
+      "severity": "High",
+      "sha256": "36a454aaab124458e46152f0d590b0bb97f8d704950de4dc001902b382e68f51",
+      "source_url": "https://bazaar.abuse.ch/sample/36a454aaab124458e46152f0d590b0bb97f8d704950de4dc001902b382e68f51/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WannaCry sample first seen 2026-10-16 10:15:08 UTC (MalwareBazaar)",
+      "name": "Win.WannaCry",
+      "severity": "High",
+      "sha256": "78e25638e490f326551d803a608c0df0f7e5af2747f124078237301737f63b2b",
+      "source_url": "https://bazaar.abuse.ch/sample/78e25638e490f326551d803a608c0df0f7e5af2747f124078237301737f63b2b/",
+      "type": "Malware"
+    },
+    {
+      "desc": "NetSupport sample first seen 2026-10-16 09:55:46 UTC (MalwareBazaar)",
+      "name": "Win.NetSupport",
+      "severity": "High",
+      "sha256": "24294bb46842f08d3f37989de1f47d0aef9eaffa1fc9eea3ceda173702978641",
+      "source_url": "https://bazaar.abuse.ch/sample/24294bb46842f08d3f37989de1f47d0aef9eaffa1fc9eea3ceda173702978641/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Formbook sample first seen 2026-10-16 09:42:09 UTC (MalwareBazaar)",
+      "name": "Win.Formbook",
+      "severity": "High",
+      "sha256": "4aa8b661bffc46d90a56bc2da15dda5fc02c97d4c37bf653ff5f08f8804862d8",
+      "source_url": "https://bazaar.abuse.ch/sample/4aa8b661bffc46d90a56bc2da15dda5fc02c97d4c37bf653ff5f08f8804862d8/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-16 07:42:13 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "8360a40c7eb801b653b9f2180c9b3dc49fb9c6ed139f98e2491aa031f69052a8",
+      "source_url": "https://bazaar.abuse.ch/sample/8360a40c7eb801b653b9f2180c9b3dc49fb9c6ed139f98e2491aa031f69052a8/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Formbook sample first seen 2026-10-16 06:36:21 UTC (MalwareBazaar)",
+      "name": "Win.Formbook",
+      "severity": "High",
+      "sha256": "9c3f872383f2e55817f0e9e02e59408a7a60aa5632560d96d66e0541de33c020",
+      "source_url": "https://bazaar.abuse.ch/sample/9c3f872383f2e55817f0e9e02e59408a7a60aa5632560d96d66e0541de33c020/",
+      "type": "Malware"
+    },
+    {
+      "desc": "DarkTortilla sample first seen 2026-10-16 06:36:04 UTC (MalwareBazaar)",
+      "name": "Win.DarkTortilla",
+      "severity": "High",
+      "sha256": "0184c43c13b8780db3be2cab6b3815be29d5c72266df0f47b96eac23681f907c",
+      "source_url": "https://bazaar.abuse.ch/sample/0184c43c13b8780db3be2cab6b3815be29d5c72266df0f47b96eac23681f907c/",
+      "type": "Malware"
+    },
+    {
+      "desc": "AgentTesla sample first seen 2026-10-16 06:35:23 UTC (MalwareBazaar)",
+      "name": "Win.AgentTesla",
+      "severity": "High",
+      "sha256": "6772c041440cf1f4fb5e6590bfd3e5902a6080aa46e4131277f22f33ca702e32",
+      "source_url": "https://bazaar.abuse.ch/sample/6772c041440cf1f4fb5e6590bfd3e5902a6080aa46e4131277f22f33ca702e32/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-16 06:28:58 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "e472cd7cb92d7e00bc46eef47b0a06e194329c8ef52acb7a7749b86d661cc054",
+      "source_url": "https://bazaar.abuse.ch/sample/e472cd7cb92d7e00bc46eef47b0a06e194329c8ef52acb7a7749b86d661cc054/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-16 06:25:12 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "a2a806d9a53457733a5e2d6c37daf737bbf4dc010128e2b256d12fb27f4c71b1",
+      "source_url": "https://bazaar.abuse.ch/sample/a2a806d9a53457733a5e2d6c37daf737bbf4dc010128e2b256d12fb27f4c71b1/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-16 06:21:22 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "95b5c650d9a1d3276cc3a3f7e3ee6f110fafef59015174e665349ba5c6a3368b",
+      "source_url": "https://bazaar.abuse.ch/sample/95b5c650d9a1d3276cc3a3f7e3ee6f110fafef59015174e665349ba5c6a3368b/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Adware.Generic sample first seen 2026-10-16 06:16:10 UTC (MalwareBazaar)",
+      "name": "Win.Adware.Generic",
+      "severity": "High",
+      "sha256": "a71acdd5b825072e40bc68df78ec0f4e5f7277a7043d8a43c9726669d48d9416",
+      "source_url": "https://bazaar.abuse.ch/sample/a71acdd5b825072e40bc68df78ec0f4e5f7277a7043d8a43c9726669d48d9416/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-16 05:52:07 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "d27e33a6766532e8a826517790932a3c90e8c12fc6cbe96d19d398eb0e2f06f5",
+      "source_url": "https://bazaar.abuse.ch/sample/d27e33a6766532e8a826517790932a3c90e8c12fc6cbe96d19d398eb0e2f06f5/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-16 05:24:29 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "6b79cc7d38340106c0cf18a24499d430a6319282387fdd396d4a2f7943f8dd8e",
+      "source_url": "https://bazaar.abuse.ch/sample/6b79cc7d38340106c0cf18a24499d430a6319282387fdd396d4a2f7943f8dd8e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SalatStealer sample first seen 2026-10-16 04:26:31 UTC (MalwareBazaar)",
+      "name": "Win.SalatStealer",
+      "severity": "High",
+      "sha256": "e096855e3202ad914ea6ff670e1872d813f6104f3c0b4ed878d0fb376a772c5b",
+      "source_url": "https://bazaar.abuse.ch/sample/e096855e3202ad914ea6ff670e1872d813f6104f3c0b4ed878d0fb376a772c5b/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SalatStealer sample first seen 2026-10-16 04:25:59 UTC (MalwareBazaar)",
+      "name": "Win.SalatStealer",
+      "severity": "High",
+      "sha256": "93b60bb3affff182a38cfd66c956204db0509a72844a8ff69582892e16437646",
+      "source_url": "https://bazaar.abuse.ch/sample/93b60bb3affff182a38cfd66c956204db0509a72844a8ff69582892e16437646/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Vidar sample first seen 2026-10-16 03:45:16 UTC (MalwareBazaar)",
+      "name": "Win.Vidar",
+      "severity": "High",
+      "sha256": "e0b224363b0fac2b9a2ff32f397e1b03feb33b987e8cb85bbfdca2678c7973b1",
+      "source_url": "https://bazaar.abuse.ch/sample/e0b224363b0fac2b9a2ff32f397e1b03feb33b987e8cb85bbfdca2678c7973b1/",
+      "type": "Malware"
+    },
+    {
+      "desc": "XWorm sample first seen 2026-10-16 03:19:08 UTC (MalwareBazaar)",
+      "name": "Win.XWorm",
+      "severity": "High",
+      "sha256": "b1cc5ad78b72d2f0a94d370e840e24ea38a31690ece3af851da345975da7ca5c",
+      "source_url": "https://bazaar.abuse.ch/sample/b1cc5ad78b72d2f0a94d370e840e24ea38a31690ece3af851da345975da7ca5c/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-16 02:57:20 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "51c23cd7ae3be097ad412657d6e03b4794fbc19853da07f24609fb7148610a5f",
+      "source_url": "https://bazaar.abuse.ch/sample/51c23cd7ae3be097ad412657d6e03b4794fbc19853da07f24609fb7148610a5f/",
+      "type": "Malware"
+    },
+    {
+      "desc": "CoinMiner sample first seen 2026-10-16 01:21:35 UTC (MalwareBazaar)",
+      "name": "Win.CoinMiner",
+      "severity": "High",
+      "sha256": "a2b27dee9494b5978815784900f167ed093028f1eba443a7d02b11b66def9483",
+      "source_url": "https://bazaar.abuse.ch/sample/a2b27dee9494b5978815784900f167ed093028f1eba443a7d02b11b66def9483/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WannaCry sample first seen 2026-10-16 01:15:09 UTC (MalwareBazaar)",
+      "name": "Win.WannaCry",
+      "severity": "High",
+      "sha256": "b2f356e15402e11fb6292b91a97f7f9a8f15cb323c5d43423b01bee04eef2746",
+      "source_url": "https://bazaar.abuse.ch/sample/b2f356e15402e11fb6292b91a97f7f9a8f15cb323c5d43423b01bee04eef2746/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RustyStealer sample first seen 2026-10-16 00:47:02 UTC (MalwareBazaar)",
+      "name": "Win.RustyStealer",
+      "severity": "High",
+      "sha256": "5fe4d4fff5da2c58f4e4450d67f5ab325b78beba7cd294169e9e8af4ef429f6f",
+      "source_url": "https://bazaar.abuse.ch/sample/5fe4d4fff5da2c58f4e4450d67f5ab325b78beba7cd294169e9e8af4ef429f6f/",
+      "type": "Malware"
+    },
+    {
+      "desc": "UmbralStealer sample first seen 2026-10-16 00:41:13 UTC (MalwareBazaar)",
+      "name": "Win.UmbralStealer",
+      "severity": "High",
+      "sha256": "82855f659d8d5b23c68205a954a067c183c8af024f2340e3141aaeaad4b1c4b0",
+      "source_url": "https://bazaar.abuse.ch/sample/82855f659d8d5b23c68205a954a067c183c8af024f2340e3141aaeaad4b1c4b0/",
+      "type": "Malware"
+    },
+    {
+      "desc": "AsyncRAT sample first seen 2026-10-16 00:41:02 UTC (MalwareBazaar)",
+      "name": "Win.AsyncRAT",
+      "severity": "High",
+      "sha256": "98379ccde6fc0517a749bdfb4fa3a384ccc8dbb86f1f4c1ada23a3bf57760d87",
+      "source_url": "https://bazaar.abuse.ch/sample/98379ccde6fc0517a749bdfb4fa3a384ccc8dbb86f1f4c1ada23a3bf57760d87/",
+      "type": "Malware"
+    },
+    {
+      "desc": "njrat sample first seen 2026-10-16 00:40:58 UTC (MalwareBazaar)",
+      "name": "Win.njrat",
+      "severity": "High",
+      "sha256": "51ef64b51fbc68f3fdffa43e7c0d89fad5a522a53d5c3930d8145bc96cc62067",
+      "source_url": "https://bazaar.abuse.ch/sample/51ef64b51fbc68f3fdffa43e7c0d89fad5a522a53d5c3930d8145bc96cc62067/",
+      "type": "Malware"
+    },
+    {
+      "desc": "njrat sample first seen 2026-10-16 00:39:52 UTC (MalwareBazaar)",
+      "name": "Win.njrat",
+      "severity": "High",
+      "sha256": "99abb19b58002ac9bd71b4d097dbcd63d41cc7e7a21e1e5eadac4b4a75acb4fc",
+      "source_url": "https://bazaar.abuse.ch/sample/99abb19b58002ac9bd71b4d097dbcd63d41cc7e7a21e1e5eadac4b4a75acb4fc/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WailsLoader sample first seen 2026-10-16 00:37:50 UTC (MalwareBazaar)",
+      "name": "Win.WailsLoader",
+      "severity": "High",
+      "sha256": "bc6af94ef856472d2a5b75de58fc12e9616d37d1b9dba17ffeeda81d77e40b47",
+      "source_url": "https://bazaar.abuse.ch/sample/bc6af94ef856472d2a5b75de58fc12e9616d37d1b9dba17ffeeda81d77e40b47/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SalatStealer sample first seen 2026-10-16 00:22:56 UTC (MalwareBazaar)",
+      "name": "Win.SalatStealer",
+      "severity": "High",
+      "sha256": "ab0c6d4640de59c97bcdf9bab4a6cba7523b7d4e48bf56c729ecba9e0c5dd6d1",
+      "source_url": "https://bazaar.abuse.ch/sample/ab0c6d4640de59c97bcdf9bab4a6cba7523b7d4e48bf56c729ecba9e0c5dd6d1/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WailsLoader sample first seen 2026-10-15 23:56:31 UTC (MalwareBazaar)",
+      "name": "Win.WailsLoader",
+      "severity": "High",
+      "sha256": "7169885e9230836cf829ee86035864806a8720cb644e5a1d7f53f914b330cab2",
+      "source_url": "https://bazaar.abuse.ch/sample/7169885e9230836cf829ee86035864806a8720cb644e5a1d7f53f914b330cab2/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WailsLoader sample first seen 2026-10-15 23:56:20 UTC (MalwareBazaar)",
+      "name": "Win.WailsLoader",
+      "severity": "High",
+      "sha256": "d4bb1f9cc14e1a27aa5d4f5ec397247b06cc5b0ae0b8fd4067a2b10f6223e2ef",
+      "source_url": "https://bazaar.abuse.ch/sample/d4bb1f9cc14e1a27aa5d4f5ec397247b06cc5b0ae0b8fd4067a2b10f6223e2ef/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WailsLoader sample first seen 2026-10-15 23:43:53 UTC (MalwareBazaar)",
+      "name": "Win.WailsLoader",
+      "severity": "High",
+      "sha256": "069f1429577c2426c7883f392ca6441f1aea464b9b2262ef2fcb25989b701ee0",
+      "source_url": "https://bazaar.abuse.ch/sample/069f1429577c2426c7883f392ca6441f1aea464b9b2262ef2fcb25989b701ee0/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WailsLoader sample first seen 2026-10-15 23:43:42 UTC (MalwareBazaar)",
+      "name": "Win.WailsLoader",
+      "severity": "High",
+      "sha256": "052a2258a185f4c858326ff1a5754b2c4c2bf680c12ebf30a3c2b2b9c1af8f68",
+      "source_url": "https://bazaar.abuse.ch/sample/052a2258a185f4c858326ff1a5754b2c4c2bf680c12ebf30a3c2b2b9c1af8f68/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SMSspy sample first seen 2026-10-19 06:21:01 UTC (ThreatFox)",
+      "name": "Android.SMSspy",
+      "severity": "High",
+      "sha256": "1b40c5c5ede3f9986692526f2e1378fcb5c93fac4e07819c4e2fad2c382a3b06",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972789/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SMSspy sample first seen 2026-10-19 06:21:01 UTC (ThreatFox)",
+      "name": "Android.SMSspy",
+      "severity": "High",
+      "sha256": "5d58978d02b03f6274c3146320d17a1d64642901ae6984c1bddbd7e6293628f6",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972790/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SMSspy sample first seen 2026-10-19 06:21:00 UTC (ThreatFox)",
+      "name": "Android.SMSspy",
+      "severity": "High",
+      "sha256": "2dbcfb3b86ef108709d44d6a9213c095bb2ea51797ad5ff3e0e61bc99e8e0326",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972791/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SMSspy sample first seen 2026-10-19 06:21:00 UTC (ThreatFox)",
+      "name": "Android.SMSspy",
+      "severity": "High",
+      "sha256": "8dfb0686ea46ce428422587f9c835d30a4a39da23c428bca0aba4d716613f1eb",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972792/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SMSspy sample first seen 2026-10-19 06:20:52 UTC (ThreatFox)",
+      "name": "Android.SMSspy",
+      "severity": "High",
+      "sha256": "ca394e1603c83b57b41539cc893dc308e3d99e7542c35db4c2c4ece6f068161b",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973186/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SMSspy sample first seen 2026-10-19 06:20:22 UTC (ThreatFox)",
+      "name": "Android.SMSspy",
+      "severity": "High",
+      "sha256": "01004ec08124a75c496644d11a5a137dc24f5ddfe79e918a3aefd49d24316ca6",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973571/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SMSspy sample first seen 2026-10-19 06:20:20 UTC (ThreatFox)",
+      "name": "Android.SMSspy",
+      "severity": "High",
+      "sha256": "d925bd9a7e6d71e02f34624223878a090efd5f9ae2c55e80efb14e53cf3c4c7e",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973590/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SheetRAT sample first seen 2026-10-20 16:21:21 UTC (MalwareBazaar)",
+      "name": "Win.SheetRAT",
+      "severity": "High",
+      "sha256": "6d8696a2fd1b6df9e3d3203bc2b2a76e5dce67ecf9ddac7baac7253b21ed2650",
+      "source_url": "https://bazaar.abuse.ch/sample/6d8696a2fd1b6df9e3d3203bc2b2a76e5dce67ecf9ddac7baac7253b21ed2650/",
+      "type": "Malware"
+    },
+    {
+      "desc": "XWorm sample first seen 2026-10-20 16:19:16 UTC (MalwareBazaar)",
+      "name": "Win.XWorm",
+      "severity": "High",
+      "sha256": "7ca1dfc3154381c742649930ef86f7d4413150c9d1309f3da6526f842d3e4097",
+      "source_url": "https://bazaar.abuse.ch/sample/7ca1dfc3154381c742649930ef86f7d4413150c9d1309f3da6526f842d3e4097/",
+      "type": "Malware"
+    },
+    {
+      "desc": "CoinMiner sample first seen 2026-10-20 14:52:10 UTC (MalwareBazaar)",
+      "name": "Win.CoinMiner",
+      "severity": "High",
+      "sha256": "f33d741507b7debf0faa5610f1e7637b6ca9594be82444bc3e065c1c6b13d8b0",
+      "source_url": "https://bazaar.abuse.ch/sample/f33d741507b7debf0faa5610f1e7637b6ca9594be82444bc3e065c1c6b13d8b0/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Zombie sample first seen 2026-10-20 14:32:00 UTC (MalwareBazaar)",
+      "name": "Win.Zombie",
+      "severity": "High",
+      "sha256": "c302978da2e06096d88ee757aeb8784015b4e041c500ff6c944516d0d5704f3b",
+      "source_url": "https://bazaar.abuse.ch/sample/c302978da2e06096d88ee757aeb8784015b4e041c500ff6c944516d0d5704f3b/",
+      "type": "Malware"
+    },
+    {
+      "desc": "GuLoader sample first seen 2026-10-20 14:22:43 UTC (MalwareBazaar)",
+      "name": "Win.GuLoader",
+      "severity": "High",
+      "sha256": "b0860714c103ef1ba4287b84dee4158574f2c3244ae89f3824e9f80434db6114",
+      "source_url": "https://bazaar.abuse.ch/sample/b0860714c103ef1ba4287b84dee4158574f2c3244ae89f3824e9f80434db6114/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WannaCry sample first seen 2026-10-20 14:15:16 UTC (MalwareBazaar)",
+      "name": "Win.WannaCry",
+      "severity": "High",
+      "sha256": "ee8311e5c3d5c0f3ec57221171c2f7c839390dd31abfb10908f893179016f140",
+      "source_url": "https://bazaar.abuse.ch/sample/ee8311e5c3d5c0f3ec57221171c2f7c839390dd31abfb10908f893179016f140/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Formbook sample first seen 2026-10-20 13:49:25 UTC (MalwareBazaar)",
+      "name": "Win.Formbook",
+      "severity": "High",
+      "sha256": "6ef0475a2947228b255910ecb1afbfb67d84422890530465af83dd8962b511ea",
+      "source_url": "https://bazaar.abuse.ch/sample/6ef0475a2947228b255910ecb1afbfb67d84422890530465af83dd8962b511ea/",
+      "type": "Malware"
+    },
+    {
+      "desc": "njrat sample first seen 2026-10-20 13:42:22 UTC (MalwareBazaar)",
+      "name": "Win.njrat",
+      "severity": "High",
+      "sha256": "de8e4550241c82dd8addc993db679e5eb9ec3080dfc74eaeaf0fbba20aefd73e",
+      "source_url": "https://bazaar.abuse.ch/sample/de8e4550241c82dd8addc993db679e5eb9ec3080dfc74eaeaf0fbba20aefd73e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "NanoCore sample first seen 2026-10-20 13:30:08 UTC (MalwareBazaar)",
+      "name": "Win.NanoCore",
+      "severity": "High",
+      "sha256": "29215ad7f765f085a93eebf9be3fc2a1c80e38c897b88a92d4b9467bdefc8dd0",
+      "source_url": "https://bazaar.abuse.ch/sample/29215ad7f765f085a93eebf9be3fc2a1c80e38c897b88a92d4b9467bdefc8dd0/",
+      "type": "Malware"
+    },
+    {
+      "desc": "AsyncRAT sample first seen 2026-10-20 13:11:54 UTC (MalwareBazaar)",
+      "name": "Win.AsyncRAT",
+      "severity": "High",
+      "sha256": "c2b10b8c0d346d3e1201daea39713fbfaeb410e8b7fee94b0546a3fcdc91573f",
+      "source_url": "https://bazaar.abuse.ch/sample/c2b10b8c0d346d3e1201daea39713fbfaeb410e8b7fee94b0546a3fcdc91573f/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ValleyRAT sample first seen 2026-10-20 13:04:14 UTC (MalwareBazaar)",
+      "name": "Win.ValleyRAT",
+      "severity": "High",
+      "sha256": "c181518b27700560c643334b78f00a70dbc8e9ca9396f464d1d0723d007e5a31",
+      "source_url": "https://bazaar.abuse.ch/sample/c181518b27700560c643334b78f00a70dbc8e9ca9396f464d1d0723d007e5a31/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RemusStealer sample first seen 2026-10-20 13:04:11 UTC (MalwareBazaar)",
+      "name": "Win.RemusStealer",
+      "severity": "High",
+      "sha256": "8c01bdcf0a2e0de58099f1d25331c6e9ff8b9288ec3d03d711edbabc8f9f641d",
+      "source_url": "https://bazaar.abuse.ch/sample/8c01bdcf0a2e0de58099f1d25331c6e9ff8b9288ec3d03d711edbabc8f9f641d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-20 12:44:58 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "14353f0d049fbf88896168dd13e106857179ce9fc1909aaad698b78492a07fc4",
+      "source_url": "https://bazaar.abuse.ch/sample/14353f0d049fbf88896168dd13e106857179ce9fc1909aaad698b78492a07fc4/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-20 12:42:13 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "304471dcca19cbb8d9fe57428092fb6472a5d0034da85ca0903927b71a2a7190",
+      "source_url": "https://bazaar.abuse.ch/sample/304471dcca19cbb8d9fe57428092fb6472a5d0034da85ca0903927b71a2a7190/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-20 12:41:56 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "5bbe2628b246fd14144787f5638d1af2fce69fc8b8286fdadda2482a2f16c1d1",
+      "source_url": "https://bazaar.abuse.ch/sample/5bbe2628b246fd14144787f5638d1af2fce69fc8b8286fdadda2482a2f16c1d1/",
+      "type": "Malware"
+    },
+    {
+      "desc": "WARDENStealer sample first seen 2026-10-20 12:41:46 UTC (MalwareBazaar)",
+      "name": "Win.WARDENStealer",
+      "severity": "High",
+      "sha256": "4dbce01bb6803fd0a09e06fd4b06d38e87ebf08c44276bc0d686549f993687b7",
+      "source_url": "https://bazaar.abuse.ch/sample/4dbce01bb6803fd0a09e06fd4b06d38e87ebf08c44276bc0d686549f993687b7/",
+      "type": "Malware"
+    },
+    {
+      "desc": "SalatStealer sample first seen 2026-10-20 12:40:47 UTC (MalwareBazaar)",
+      "name": "Win.SalatStealer",
+      "severity": "High",
+      "sha256": "f8038f59ae8064dcc0bd570743d9b6fd19daaf9b024cd1a05ed247dc7d2e174b",
+      "source_url": "https://bazaar.abuse.ch/sample/f8038f59ae8064dcc0bd570743d9b6fd19daaf9b024cd1a05ed247dc7d2e174b/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-20 12:40:38 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "6e48c1bf3a982eba055d19d3e63849f413d65ee7afd5a79ef1dd8dd912ea3f49",
+      "source_url": "https://bazaar.abuse.ch/sample/6e48c1bf3a982eba055d19d3e63849f413d65ee7afd5a79ef1dd8dd912ea3f49/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:24:32 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "d91e304a337858f2dcfbf1e6a366f95320fb0400022a4326487b648b9898a36d",
+      "source_url": "https://bazaar.abuse.ch/sample/d91e304a337858f2dcfbf1e6a366f95320fb0400022a4326487b648b9898a36d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:24:27 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "4bb026581df62b024c8e3a15d0e52ff8d45124695c6e71ea14756abec409b15e",
+      "source_url": "https://bazaar.abuse.ch/sample/4bb026581df62b024c8e3a15d0e52ff8d45124695c6e71ea14756abec409b15e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:24:22 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "e9285e5adc7bded1b4883e4f16cec6ea332d73d9f495f807229222fbac1dd2ce",
+      "source_url": "https://bazaar.abuse.ch/sample/e9285e5adc7bded1b4883e4f16cec6ea332d73d9f495f807229222fbac1dd2ce/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:24:16 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "7114be5cb487e2975d2167a8660f164a3b2ec8dc1323b0f7919c5013fb5027de",
+      "source_url": "https://bazaar.abuse.ch/sample/7114be5cb487e2975d2167a8660f164a3b2ec8dc1323b0f7919c5013fb5027de/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:24:06 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "609aa250c4b5ac9457f41f9dcfe63f983886fa7cd120e188538ebe247244ade1",
+      "source_url": "https://bazaar.abuse.ch/sample/609aa250c4b5ac9457f41f9dcfe63f983886fa7cd120e188538ebe247244ade1/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:23:58 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "3d987e833b8dc2b4871ab1dcb8719a4159ab11d8d28b884ad84236688b428151",
+      "source_url": "https://bazaar.abuse.ch/sample/3d987e833b8dc2b4871ab1dcb8719a4159ab11d8d28b884ad84236688b428151/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:23:23 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "22d4777f8a1da4131b37cbc3d5eb60dbae2a1c3db2d658d17a91ef67d3378622",
+      "source_url": "https://bazaar.abuse.ch/sample/22d4777f8a1da4131b37cbc3d5eb60dbae2a1c3db2d658d17a91ef67d3378622/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:23:15 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ffd41695457a2fc2abe85c553553f3ac0603cf2669604b5733120b794adbd818",
+      "source_url": "https://bazaar.abuse.ch/sample/ffd41695457a2fc2abe85c553553f3ac0603cf2669604b5733120b794adbd818/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:23:09 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "293b1dc6e080ae3eac1de84ea384671c44cdf1d03fe51e5110749f8f358cbd64",
+      "source_url": "https://bazaar.abuse.ch/sample/293b1dc6e080ae3eac1de84ea384671c44cdf1d03fe51e5110749f8f358cbd64/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:23:04 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "4cde84a979fc9c967a3886fba6feeddf5c1ea7cb708762f1ea5ecd4d3cda62cc",
+      "source_url": "https://bazaar.abuse.ch/sample/4cde84a979fc9c967a3886fba6feeddf5c1ea7cb708762f1ea5ecd4d3cda62cc/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:22:51 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "14b711bd51096796ac6b38c30e3cced197831092956a4c6ff8d1f5ebb4432212",
+      "source_url": "https://bazaar.abuse.ch/sample/14b711bd51096796ac6b38c30e3cced197831092956a4c6ff8d1f5ebb4432212/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:22:43 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "cd56540cd8689a6874aeeed76841456c08d6afdaf3034598e60cf620f0ae0591",
+      "source_url": "https://bazaar.abuse.ch/sample/cd56540cd8689a6874aeeed76841456c08d6afdaf3034598e60cf620f0ae0591/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:22:32 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "f55ad6ac989ab71a393c9d038f5cec473fe8ebd00197966b7051d493c53b59c8",
+      "source_url": "https://bazaar.abuse.ch/sample/f55ad6ac989ab71a393c9d038f5cec473fe8ebd00197966b7051d493c53b59c8/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:22:27 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "8795abe52d8d274a2ae11fbc7df36809c810333fda63e64da495aa3278321350",
+      "source_url": "https://bazaar.abuse.ch/sample/8795abe52d8d274a2ae11fbc7df36809c810333fda63e64da495aa3278321350/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:22:22 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "e26df3b6bc8c55f7d07d178707f173e6a3881016eb3644498e162f0dc97da92d",
+      "source_url": "https://bazaar.abuse.ch/sample/e26df3b6bc8c55f7d07d178707f173e6a3881016eb3644498e162f0dc97da92d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:22:11 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "2f2b21bc394589466cfdc813aad597347892cc9a43a3742808adc7ce44c907bb",
+      "source_url": "https://bazaar.abuse.ch/sample/2f2b21bc394589466cfdc813aad597347892cc9a43a3742808adc7ce44c907bb/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:21:59 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "9113fcddc88f6eb5d38910e5bee2ce95736c9ad7a27984c1ce136790325d0382",
+      "source_url": "https://bazaar.abuse.ch/sample/9113fcddc88f6eb5d38910e5bee2ce95736c9ad7a27984c1ce136790325d0382/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:21:54 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "a5c6a4ffe798d6a23e8ec1532c04df2eb7a365a4f68c2b0dd1f48eadc6d31b04",
+      "source_url": "https://bazaar.abuse.ch/sample/a5c6a4ffe798d6a23e8ec1532c04df2eb7a365a4f68c2b0dd1f48eadc6d31b04/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:21:47 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ffca6aa96572743200f9f0040a3e435766f6d7c15d6a4c72045a0cbb4db72eb4",
+      "source_url": "https://bazaar.abuse.ch/sample/ffca6aa96572743200f9f0040a3e435766f6d7c15d6a4c72045a0cbb4db72eb4/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:21:35 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "b15dcba2635f3329822d030c98a6dd92d7e6a19941797257e7e6a583dfa54efc",
+      "source_url": "https://bazaar.abuse.ch/sample/b15dcba2635f3329822d030c98a6dd92d7e6a19941797257e7e6a583dfa54efc/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:21:15 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "e2b5fc7e457661fb886e8bac99d15b0cba3871fc72950ca4802aa6f0c4494553",
+      "source_url": "https://bazaar.abuse.ch/sample/e2b5fc7e457661fb886e8bac99d15b0cba3871fc72950ca4802aa6f0c4494553/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:21:09 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "c20411a88faf07c7f4029c679d89be3b7140cf117a4c099f127000d799fbb418",
+      "source_url": "https://bazaar.abuse.ch/sample/c20411a88faf07c7f4029c679d89be3b7140cf117a4c099f127000d799fbb418/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:21:03 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "90d14626e53c4391401e09607d758635348f3ce93f52d337741e95f60f36c720",
+      "source_url": "https://bazaar.abuse.ch/sample/90d14626e53c4391401e09607d758635348f3ce93f52d337741e95f60f36c720/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:20:52 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "74b35f75ad33504cb9e61ba7061d2425dae3870fc5230cf265f7d2ceef1911f2",
+      "source_url": "https://bazaar.abuse.ch/sample/74b35f75ad33504cb9e61ba7061d2425dae3870fc5230cf265f7d2ceef1911f2/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:20:40 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ad53d8cb65833146fc6740be5dd6938fe90d94256e428468dfd508c80346d511",
+      "source_url": "https://bazaar.abuse.ch/sample/ad53d8cb65833146fc6740be5dd6938fe90d94256e428468dfd508c80346d511/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:20:28 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "477b2dd5a1d23713d56fcc976932b3ef0620b1b63f91cc0fde5a3587e2954981",
+      "source_url": "https://bazaar.abuse.ch/sample/477b2dd5a1d23713d56fcc976932b3ef0620b1b63f91cc0fde5a3587e2954981/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:19:28 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "0fcd7c4f78648a396eda077072706ceab6dee00e8ea22a7ff35a01740d0af805",
+      "source_url": "https://bazaar.abuse.ch/sample/0fcd7c4f78648a396eda077072706ceab6dee00e8ea22a7ff35a01740d0af805/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:19:23 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "4feb0b3c0fc8a7347395d85cc11d57e8f2d585ccfd0836e65525a83e244cc883",
+      "source_url": "https://bazaar.abuse.ch/sample/4feb0b3c0fc8a7347395d85cc11d57e8f2d585ccfd0836e65525a83e244cc883/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:19:10 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "90fe2b57f37d6bd045d22841fd192fccf4233bf8b21d85e5e927b68b0157b8f2",
+      "source_url": "https://bazaar.abuse.ch/sample/90fe2b57f37d6bd045d22841fd192fccf4233bf8b21d85e5e927b68b0157b8f2/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:19:04 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "bef87021caf35bf50370c0a11ccf83de14cbc1558380b690a63f87f1bf4cb366",
+      "source_url": "https://bazaar.abuse.ch/sample/bef87021caf35bf50370c0a11ccf83de14cbc1558380b690a63f87f1bf4cb366/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:18:53 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "09ac4a095622cc699022c5ecb83234df2b7dbf3035f1dc6fb439dc1e0059a480",
+      "source_url": "https://bazaar.abuse.ch/sample/09ac4a095622cc699022c5ecb83234df2b7dbf3035f1dc6fb439dc1e0059a480/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:18:40 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "bc906faf69697803a7b652ea2196bda2ab7667587fb7c39a257b6a16cf72dccf",
+      "source_url": "https://bazaar.abuse.ch/sample/bc906faf69697803a7b652ea2196bda2ab7667587fb7c39a257b6a16cf72dccf/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:18:32 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "0ae4447d755593ee1931170d4187a07a29bf0690179acc39b7400a4c65cd07c5",
+      "source_url": "https://bazaar.abuse.ch/sample/0ae4447d755593ee1931170d4187a07a29bf0690179acc39b7400a4c65cd07c5/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:18:23 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "129f838cc7d6a60993aa1e622aa56b748fb511b9578d35c7da200e837c7cc291",
+      "source_url": "https://bazaar.abuse.ch/sample/129f838cc7d6a60993aa1e622aa56b748fb511b9578d35c7da200e837c7cc291/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:18:18 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ca02f60942a43d8f8b973baa3231df1f8c26328750baa2ed8d4cf07335084ebb",
+      "source_url": "https://bazaar.abuse.ch/sample/ca02f60942a43d8f8b973baa3231df1f8c26328750baa2ed8d4cf07335084ebb/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:18:05 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "c4f5e0b453347dee387a91d0da2c4db65b8106dfe3511a6fcd6f79756b031096",
+      "source_url": "https://bazaar.abuse.ch/sample/c4f5e0b453347dee387a91d0da2c4db65b8106dfe3511a6fcd6f79756b031096/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Meterpreter sample first seen 2026-10-20 12:17:09 UTC (MalwareBazaar)",
+      "name": "Win.Meterpreter",
+      "severity": "High",
+      "sha256": "f6fbe16811654ff1fb44d939bd989f3d1eac5e28f986157030cb9bf3da290c60",
+      "source_url": "https://bazaar.abuse.ch/sample/f6fbe16811654ff1fb44d939bd989f3d1eac5e28f986157030cb9bf3da290c60/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:17:04 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "27d39120cdc08ce2ae074abcdde208d533aa8f3f6569c0c182600f3abfd96851",
+      "source_url": "https://bazaar.abuse.ch/sample/27d39120cdc08ce2ae074abcdde208d533aa8f3f6569c0c182600f3abfd96851/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:16:58 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "29f87d32b658cba4093f0b90257404c262bc1d5a65de28ba6ad4ffdf4f65fe6e",
+      "source_url": "https://bazaar.abuse.ch/sample/29f87d32b658cba4093f0b90257404c262bc1d5a65de28ba6ad4ffdf4f65fe6e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:16:47 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "2013668a450713b24fdfb34ec2488b7893bc01836879f9b1c0f739d5deee573a",
+      "source_url": "https://bazaar.abuse.ch/sample/2013668a450713b24fdfb34ec2488b7893bc01836879f9b1c0f739d5deee573a/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:16:36 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "118c38f1051be7f51c34044429bc06d0eca114c0196b7b7482221c7add2063c6",
+      "source_url": "https://bazaar.abuse.ch/sample/118c38f1051be7f51c34044429bc06d0eca114c0196b7b7482221c7add2063c6/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:16:30 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "6a7a89d1573d28a5803a4f4d18a08aa75a7136328ccd60df42e1d524d7886877",
+      "source_url": "https://bazaar.abuse.ch/sample/6a7a89d1573d28a5803a4f4d18a08aa75a7136328ccd60df42e1d524d7886877/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:16:24 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "fc0269ad99451a97de8348efbdb248a5ba341d3684952bc448ec62817537252d",
+      "source_url": "https://bazaar.abuse.ch/sample/fc0269ad99451a97de8348efbdb248a5ba341d3684952bc448ec62817537252d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:16:01 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "f377698712265c87ceba162f0c33a26b86d23724a2613c637dd9af8b11c21da6",
+      "source_url": "https://bazaar.abuse.ch/sample/f377698712265c87ceba162f0c33a26b86d23724a2613c637dd9af8b11c21da6/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:15:55 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "dc6f7a16016a2437a9711f8e734021d4a10e61b3c60cb8b09d805d75c8969336",
+      "source_url": "https://bazaar.abuse.ch/sample/dc6f7a16016a2437a9711f8e734021d4a10e61b3c60cb8b09d805d75c8969336/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:15:22 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "1884ea40e0f30433b31bfae38391aae4e632422fd895bb6d0ee79256e6259d81",
+      "source_url": "https://bazaar.abuse.ch/sample/1884ea40e0f30433b31bfae38391aae4e632422fd895bb6d0ee79256e6259d81/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:15:04 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "19bd1314e268493503c5570a5dda6b55eac3aac6608ec16257874bd799b285d8",
+      "source_url": "https://bazaar.abuse.ch/sample/19bd1314e268493503c5570a5dda6b55eac3aac6608ec16257874bd799b285d8/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:14:59 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "11942f525df4f7681006b3e681656ef32e3afd248e2d51d3660a80b958f4947e",
+      "source_url": "https://bazaar.abuse.ch/sample/11942f525df4f7681006b3e681656ef32e3afd248e2d51d3660a80b958f4947e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:14:54 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ea0b2f4ba9611770b640cfffe78fc60c5158d11cc32d235b966ec4a91c168ff4",
+      "source_url": "https://bazaar.abuse.ch/sample/ea0b2f4ba9611770b640cfffe78fc60c5158d11cc32d235b966ec4a91c168ff4/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:14:41 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "0c9ce8e07011b5afd00ae5cdebeca156c5cc606c2d5820a03d8c0a89f2d7c0fa",
+      "source_url": "https://bazaar.abuse.ch/sample/0c9ce8e07011b5afd00ae5cdebeca156c5cc606c2d5820a03d8c0a89f2d7c0fa/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:14:32 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "253d02cfe9f5c222ae1544c6e57900093de6fd01162d6584f52e2833174fdc24",
+      "source_url": "https://bazaar.abuse.ch/sample/253d02cfe9f5c222ae1544c6e57900093de6fd01162d6584f52e2833174fdc24/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Formbook sample first seen 2026-10-20 12:14:31 UTC (MalwareBazaar)",
+      "name": "Win.Formbook",
+      "severity": "High",
+      "sha256": "8a627b814696cff0f337b1ff1cf39b43066e048ce23f709decfeecce9241667a",
+      "source_url": "https://bazaar.abuse.ch/sample/8a627b814696cff0f337b1ff1cf39b43066e048ce23f709decfeecce9241667a/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:14:19 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "12fe4665c093505b17a1b6807d8c508bc71a2d43ff9b9ffdf712ec4345e25866",
+      "source_url": "https://bazaar.abuse.ch/sample/12fe4665c093505b17a1b6807d8c508bc71a2d43ff9b9ffdf712ec4345e25866/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:14:13 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "839cceb4d34eae502cac95ce4459c5080d8a42f8c3b9dcb6e51af4ff565e4c2e",
+      "source_url": "https://bazaar.abuse.ch/sample/839cceb4d34eae502cac95ce4459c5080d8a42f8c3b9dcb6e51af4ff565e4c2e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:14:05 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ec4ba1d570601eaa1474ab7cfffafcff218a717e44e8d2d22ed0573676b0463e",
+      "source_url": "https://bazaar.abuse.ch/sample/ec4ba1d570601eaa1474ab7cfffafcff218a717e44e8d2d22ed0573676b0463e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:13:59 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "be3bc809131c283b8deb542e11ed0878468b8db531696fdbee03978fde55be0e",
+      "source_url": "https://bazaar.abuse.ch/sample/be3bc809131c283b8deb542e11ed0878468b8db531696fdbee03978fde55be0e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:13:19 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "8bba473887e6d31f60d13c4fdc903bfbf688f912ad8aa5ea171ae626d3a7b9a4",
+      "source_url": "https://bazaar.abuse.ch/sample/8bba473887e6d31f60d13c4fdc903bfbf688f912ad8aa5ea171ae626d3a7b9a4/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:13:14 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "c0109510d5dc388e31211f0fd9a4f90bbf3420945775ffed6f18b1e9693e3555",
+      "source_url": "https://bazaar.abuse.ch/sample/c0109510d5dc388e31211f0fd9a4f90bbf3420945775ffed6f18b1e9693e3555/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:12:57 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ec511c74666b6e537725a1238a2429ab95d2b2ab01a5456d5d04a03f2a062649",
+      "source_url": "https://bazaar.abuse.ch/sample/ec511c74666b6e537725a1238a2429ab95d2b2ab01a5456d5d04a03f2a062649/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:12:34 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "d4ae978d0fa31d31144a0289f2307393deb992a54e4e7335e923511ac6bbc47e",
+      "source_url": "https://bazaar.abuse.ch/sample/d4ae978d0fa31d31144a0289f2307393deb992a54e4e7335e923511ac6bbc47e/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:12:29 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "2d49a9e3e31062a711b4027f834554f8bce5f479e01df5315d237903181b351d",
+      "source_url": "https://bazaar.abuse.ch/sample/2d49a9e3e31062a711b4027f834554f8bce5f479e01df5315d237903181b351d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:12:11 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "57f7a66f829e6ff154a93171100252157fe3ff0cc136dfa33fe3329f087a7eb8",
+      "source_url": "https://bazaar.abuse.ch/sample/57f7a66f829e6ff154a93171100252157fe3ff0cc136dfa33fe3329f087a7eb8/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:11:59 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ffd47c59a9960a293002c4fff481f613892599191356589eb7b6950ef7465918",
+      "source_url": "https://bazaar.abuse.ch/sample/ffd47c59a9960a293002c4fff481f613892599191356589eb7b6950ef7465918/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:11:46 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ad03ef341dfc36fbe7f74392b5619293894ee9554a164ec277d66dd21b780a2d",
+      "source_url": "https://bazaar.abuse.ch/sample/ad03ef341dfc36fbe7f74392b5619293894ee9554a164ec277d66dd21b780a2d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "INC sample first seen 2026-10-20 12:11:41 UTC (MalwareBazaar)",
+      "name": "Win.INC",
+      "severity": "High",
+      "sha256": "ba3689bf7bc6f8d8468dde5c36df56163b40d0ddfc1991e35dde258cd25428b2",
+      "source_url": "https://bazaar.abuse.ch/sample/ba3689bf7bc6f8d8468dde5c36df56163b40d0ddfc1991e35dde258cd25428b2/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Amadey sample first seen 2026-10-20 12:11:10 UTC (MalwareBazaar)",
+      "name": "Win.Amadey",
+      "severity": "High",
+      "sha256": "11159078aae574a1b2f0a96f7936626a62d29e6263b421d5db28a4da9c21c59a",
+      "source_url": "https://bazaar.abuse.ch/sample/11159078aae574a1b2f0a96f7936626a62d29e6263b421d5db28a4da9c21c59a/",
+      "type": "Malware"
+    },
+    {
+      "desc": "XWorm sample first seen 2026-10-20 12:06:58 UTC (MalwareBazaar)",
+      "name": "Win.XWorm",
+      "severity": "High",
+      "sha256": "81a490067ca061d838ba79ad02b4397acbdf1e90a85a371f66ab3cda13b844a3",
+      "source_url": "https://bazaar.abuse.ch/sample/81a490067ca061d838ba79ad02b4397acbdf1e90a85a371f66ab3cda13b844a3/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Formbook sample first seen 2026-10-20 11:26:24 UTC (MalwareBazaar)",
+      "name": "Win.Formbook",
+      "severity": "High",
+      "sha256": "5240b38a9efe67747c29da0026e03421942d4bb76d5619ed398e854480f6a076",
+      "source_url": "https://bazaar.abuse.ch/sample/5240b38a9efe67747c29da0026e03421942d4bb76d5619ed398e854480f6a076/",
+      "type": "Malware"
+    },
+    {
+      "desc": "Formbook sample first seen 2026-10-20 10:44:51 UTC (MalwareBazaar)",
+      "name": "Win.Formbook",
+      "severity": "High",
+      "sha256": "2a9eb929cf3a094c9f04346c20f63dce4c65bdc84d99cedd8952f279f497285b",
+      "source_url": "https://bazaar.abuse.ch/sample/2a9eb929cf3a094c9f04346c20f63dce4c65bdc84d99cedd8952f279f497285b/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConnectWise sample first seen 2026-10-20 10:21:49 UTC (MalwareBazaar)",
+      "name": "Win.ConnectWise",
+      "severity": "High",
+      "sha256": "1a58509437997e827b686f88abd70ceb6b73b9e2573b70dbc1017ec050b65df6",
+      "source_url": "https://bazaar.abuse.ch/sample/1a58509437997e827b686f88abd70ceb6b73b9e2573b70dbc1017ec050b65df6/",
+      "type": "Malware"
+    },
+    {
+      "desc": "PantherStealer sample first seen 2026-10-20 09:35:40 UTC (MalwareBazaar)",
+      "name": "Win.PantherStealer",
+      "severity": "High",
+      "sha256": "24ecad197d71f3ab7fc514efbd0d86d77ef301e78a5c64c6f7ede029729cb77d",
+      "source_url": "https://bazaar.abuse.ch/sample/24ecad197d71f3ab7fc514efbd0d86d77ef301e78a5c64c6f7ede029729cb77d/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ConquerRAT sample first seen 2026-10-20 09:35:35 UTC (MalwareBazaar)",
+      "name": "Win.ConquerRAT",
+      "severity": "High",
+      "sha256": "c1fef7708c4ee9e6e0b6ece3a301d8544c4c68799a1f90232b2db941bed2def7",
+      "source_url": "https://bazaar.abuse.ch/sample/c1fef7708c4ee9e6e0b6ece3a301d8544c4c68799a1f90232b2db941bed2def7/",
+      "type": "Malware"
+    },
+    {
+      "desc": "ChickenStealer sample first seen 2026-10-20 09:35:29 UTC (MalwareBazaar)",
+      "name": "Win.ChickenStealer",
+      "severity": "High",
+      "sha256": "1de76c8ad30452f031d7d5d0705186c9a1046c19eca1831a6d647d3fa778696a",
+      "source_url": "https://bazaar.abuse.ch/sample/1de76c8ad30452f031d7d5d0705186c9a1046c19eca1831a6d647d3fa778696a/",
+      "type": "Malware"
+    },
+    {
+      "desc": "RuntimeBreaker sample first seen 2026-10-20 09:35:23 UTC (MalwareBazaar)",
+      "name": "Win.RuntimeBreaker",
+      "severity": "High",
+      "sha256": "3669d6a997120102b06662ea1f43ea57154af8080971674fd7a4b823601b69cf",
+      "source_url": "https://bazaar.abuse.ch/sample/3669d6a997120102b06662ea1f43ea57154af8080971674fd7a4b823601b69cf/",
+      "type": "Malware"
+    },
+    {
+      "desc": "CinderRAT sample first seen 2026-10-20 09:35:18 UTC (MalwareBazaar)",
+      "name": "Win.CinderRAT",
+      "severity": "High",
+      "sha256": "846aebdb5e048bcc40916435379810fdd5c5d388f4c86cbd293370a485484321",
+      "source_url": "https://bazaar.abuse.ch/sample/846aebdb5e048bcc40916435379810fdd5c5d388f4c86cbd293370a485484321/",
+      "type": "Malware"
+    }
+  ],
   "metadata": {
     "key_id": "k2",
-    "issued_at": 1791958860,
-    "expires_at": 1793168460,
+    "issued_at": 1792682456,
+    "expires_at": 1793892056,
     "revoked_key_ids": [
       "k1"
     ]
   },
-  "signature": "c1e1baf51a6c0ef13d3e02892a314d1e4bed02dde5e57c69395526d19389bb08d667abb2cc3da8f009fea084350168d87532e66457f2b77a4836908fc5b3d709"
+  "signature": "b20c6d4482ecfda6772d25a662942d79ecf6f18f51280362f762ee81a0988023e8297d98fe4abcfd68753d911c0ba1d6cad86821bd34cdada2e60af6c1c15b0e"
 }
