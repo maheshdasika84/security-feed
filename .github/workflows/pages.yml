@@ -42,12 +42,15 @@ jobs:
         run: python -m pip install --require-hashes -r requirements.txt
 
       - name: Refuse a feed the app would reject
-        run: python verify_feed.py threat_feed.json
+        run: |
+          python verify_feed.py threat_feed.json
+          if [ -f cve_feed.json ]; then python verify_feed.py cve_feed.json; fi
 
       - name: Stage site (feed only)
         run: |
           mkdir -p _site
           cp threat_feed.json _site/threat_feed.json
+          if [ -f cve_feed.json ]; then cp cve_feed.json _site/cve_feed.json; fi
           touch _site/.nojekyll
 
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
