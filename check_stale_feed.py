@@ -16,6 +16,7 @@ Usage:
 import argparse
 import datetime
 import json
+import math
 import os
 import re
 import sys
@@ -86,14 +87,20 @@ def canonical_payload(
     return json.dumps(canonical, sort_keys=True, separators=(",", ":")).encode("utf-8")
 
 
-def parse_timestamp(val: Any) -> float:
+def parse_timestamp(val: Any) -> Optional[float]:
     if val is None or val is False or val is True or val == "":
-        return 0.0
+        return None
     if isinstance(val, (int, float)):
-        return float(val)
+        f = float(val)
+        if math.isnan(f) or math.isinf(f):
+            return None
+        return f
     s = str(val).strip()
     try:
-        return float(s)
+        f = float(s)
+        if math.isnan(f) or math.isinf(f):
+            return None
+        return f
     except ValueError:
         pass
     for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%dT%H:%M:%S"):
@@ -101,7 +108,7 @@ def parse_timestamp(val: Any) -> float:
             return time.mktime(datetime.datetime.strptime(s, fmt).timetuple())
         except Exception:
             continue
-    return 0.0
+    return None
 
 
 def check_feed(
@@ -183,9 +190,9 @@ def check_feed(
     # 3. Timestamps, future tolerance, and freshness/staleness
     gen_val = meta.get("generated_at") or meta.get("issued_at") or meta.get("timestamp")
     gen_ts = parse_timestamp(gen_val)
-    print(f"Generated At : {gen_val} (epoch {gen_ts:.0f})")
+    print(f"Generated At : {gen_val} (epoch {f'{gen_ts:.0f}' if gen_ts is not None else 'invalid'})")
 
-    if not gen_val or gen_ts <= 0:
+    if gen_ts is None or gen_ts <= 0:
         print("CRITICAL: Feed metadata contains no readable generated_at/issued_at timestamp!")
         exit_code = 1
     elif gen_ts > current_time + FUTURE_TOLERANCE_SECONDS:
@@ -204,7 +211,10 @@ def check_feed(
     expires_val = meta.get("expires_at")
     if expires_val is not None:
         expires_ts = parse_timestamp(expires_val)
-        if expires_ts > 0 and current_time > expires_ts:
+        if expires_ts is None or expires_ts <= 0:
+            print(f"CRITICAL: Feed metadata contains malformed or unreadable expires_at timestamp: {expires_val!r}!")
+            exit_code = 1
+        elif current_time > expires_ts:
             print(f"CRITICAL: Feed has expired (metadata.expires_at {expires_val} is in the past)!")
             exit_code = 1
 
@@ -225,22 +235,44 @@ def check_feed(
             placeholders = 0
             malformed = 0
 
+            CVE_ID_PATTERN = re.compile(r"^CVE-\d{4}-\d{4,}$", re.IGNORECASE)
+            PKG_NAME_PATTERN = re.compile(r"^[a-zA-Z][a-zA-Z0-9_]*(?:\.[a-zA-Z][a-zA-Z0-9_]*)+$")
+            VERSION_PATTERN = re.compile(r"^\d+\.\d+(?:\.\d+)*$")
+
             for cve in cves:
                 if not isinstance(cve, dict):
                     malformed += 1
                     continue
-                cid = str(cve.get("cve_id", "")).strip()
-                pkg = str(cve.get("package_name", "")).strip()
-                fix = str(cve.get("fixed_version", "")).strip()
+                cid = cve.get("cve_id")
+                pkg = cve.get("package_name")
+                fix = cve.get("fixed_version")
+
+                if not isinstance(cid, str) or not isinstance(pkg, str) or not isinstance(fix, str):
+                    malformed += 1
+                    continue
+
+                cid = cid.strip()
+                pkg = pkg.strip()
+                fix = fix.strip()
 
                 if not cid or not pkg or not fix:
+                    malformed += 1
+                    continue
+
+                if not CVE_ID_PATTERN.match(cid):
+                    malformed += 1
+                    continue
+                if not PKG_NAME_PATTERN.match(pkg):
+                    malformed += 1
+                    continue
+                if not VERSION_PATTERN.match(fix):
                     malformed += 1
                     continue
 
                 if fix == "999.0" or "999" in fix:
                     placeholders += 1
 
-                pair = (cid, pkg)
+                pair = (cid.upper(), pkg)
                 if pair in seen_cve_pkgs:
                     duplicates += 1
                 seen_cve_pkgs.add(pair)

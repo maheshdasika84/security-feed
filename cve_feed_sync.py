@@ -479,6 +479,12 @@ def extract_cve_entries(kev_vulns: Any) -> List[Dict[str, Any]]:
             if re.search(r"\b(?:desktop-only|ios-only|windows-only|mac-only)\b", combined_text):
                 logger.info("Skipping unlisted KEV %s: non-Android only", cve_id)
                 continue
+            if re.search(r"\b(?:no patched|no patch|no fix|unpatched|not patched|no update available|no fix available)\b", combined_text):
+                logger.info("Skipping unlisted KEV %s: record indicates no patch available", cve_id)
+                continue
+            if re.search(r"\b(?:remains vulnerable|is vulnerable)\b", combined_text):
+                logger.info("Skipping unlisted KEV %s: record indicates vulnerable state without verified fix", cve_id)
+                continue
 
             # 3. Require explicit Android applicability keywords
             if not re.search(r"\b(?:android|apk|aab)\b", combined_text) and not (is_chrome and "webview" in combined_text):
@@ -491,7 +497,8 @@ def extract_cve_entries(kev_vulns: Any) -> List[Dict[str, Any]]:
             text_for_versions = f"{action} {desc} {product}"
             clean_text_for_versions = re.sub(r"CVE-\d{4}-\d+", "", text_for_versions, flags=re.IGNORECASE)
             clean_text_for_versions = re.sub(r"\b\d{4}-\d{2}-\d{2}\b", "", clean_text_for_versions)
-            found_versions = set(re.findall(r"\b\d+\.\d+(?:\.\d+)*\b", clean_text_for_versions))
+            raw_versions = re.findall(r"(?<![\w.])[vV]?(\d+\.\d+(?:\.\d+)*)\b(?!\.\d)", clean_text_for_versions)
+            found_versions = {v.lstrip("vV") for v in raw_versions}
 
             # If 0 versions found or more than 1 distinct version found, it is ambiguous -> reject/queue for review
             if len(found_versions) != 1:
@@ -500,8 +507,14 @@ def extract_cve_entries(kev_vulns: Any) -> List[Dict[str, Any]]:
 
             fixed_ver = next(iter(found_versions))
 
-            # Also require that requiredAction or description has an explicit update/fixed phrasing
-            if not re.search(r"(?:update to|fixed in|patch version|version|upgrade to)\s+[vV]?\s*" + re.escape(fixed_ver), text_for_versions, re.IGNORECASE):
+            # Also require that requiredAction or description has an explicit update/fixed phrasing.
+            # Bare "version <x>" alone describes affected versions and must NOT be accepted.
+            fix_directive_pattern = (
+                r"(?:update to (?:version )?|fixed in (?:version )?|patch version |upgrade to (?:version )?|"
+                r"apply (?:patch|update) (?:version )?|patched in (?:version )?|fixed by updating to (?:version )?)\s*[vV]?\s*"
+                + re.escape(fixed_ver)
+            )
+            if not re.search(fix_directive_pattern, text_for_versions, re.IGNORECASE):
                 logger.info("Skipping unlisted KEV %s: version %s not tied to fix/update directive", cve_id, fixed_ver)
                 continue
 
