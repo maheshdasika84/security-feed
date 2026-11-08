@@ -1,856 +1,4 @@
 {
-  "domains": {
-    "6krhuxhtp0k5.bestminecraftplayer.fun": {
-      "desc": "Hades botnet_cc first seen 2026-10-20 05:13:36 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974788/",
-      "type": "C2"
-    },
-    "7k.iakmialor.web.id": {
-      "desc": "Vidar botnet_cc first seen 2026-10-16 10:49:12 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969354/",
-      "type": "C2"
-    },
-    "8-hhh.org": {
-      "desc": "Vidar botnet_cc first seen 2026-10-17 11:05:25 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1971072/",
-      "type": "C2"
-    },
-    "98winnnn.online": {
-      "desc": "AsyncRAT botnet_cc first seen 2026-10-20 13:20:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1975797/",
-      "type": "C2"
-    },
-    "aloemqvnth.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970949/",
-      "type": "C2"
-    },
-    "andromeda-d389d.firebasestorage.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973620/",
-      "type": "C2"
-    },
-    "aneldhasy.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970927/",
-      "type": "C2"
-    },
-    "anhwsoowoe.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970926/",
-      "type": "C2"
-    },
-    "api.failproxy.space": {
-      "desc": "Stealc botnet_cc first seen 2026-10-16 06:10:31 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968846/",
-      "type": "C2"
-    },
-    "arkwemiinoex.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970930/",
-      "type": "C2"
-    },
-    "articio.top": {
-      "desc": "ValleyRAT botnet_cc first seen 2026-10-20 05:45:27 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1975074/",
-      "type": "C2"
-    },
-    "atiagwcvltealv.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970919/",
-      "type": "C2"
-    },
-    "audit.bitfetch.cc": {
-      "desc": "ACR Stealer botnet_cc first seen 2026-10-19 15:12:30 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974396/",
-      "type": "C2"
-    },
-    "b.7sot.org": {
-      "desc": "Vidar botnet_cc first seen 2026-10-17 08:59:43 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1971083/",
-      "type": "C2"
-    },
-    "backdoor.61116222b2.buzz": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:33 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969544/",
-      "type": "C2"
-    },
-    "backdoor.afribus.co": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:32 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969541/",
-      "type": "C2"
-    },
-    "backdoor.doyanslot.us": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:33 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969543/",
-      "type": "C2"
-    },
-    "backdoor.fifa55hr.com": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:33 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969542/",
-      "type": "C2"
-    },
-    "backdoor.fifa55red.me": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:34 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969545/",
-      "type": "C2"
-    },
-    "backdoor.qh88eu.com": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:32 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969539/",
-      "type": "C2"
-    },
-    "bcopleesr.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970908/",
-      "type": "C2"
-    },
-    "bellows.pics": {
-      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:43 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970658/",
-      "type": "C2"
-    },
-    "bestminecraftplayer.fun": {
-      "desc": "Hades botnet_cc first seen 2026-10-20 05:13:35 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974789/",
-      "type": "C2"
-    },
-    "buillingereio.com": {
-      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:23 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970788/",
-      "type": "C2"
-    },
-    "cdn.img.76e1e5fa.pnalumni.dgitd.anchorbolnorth.com": {
-      "desc": "Cobalt Strike botnet_cc first seen 2026-10-19 13:01:51 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974269/",
-      "type": "C2"
-    },
-    "cdn.wovplaying.help": {
-      "desc": "SalatStealer payload_delivery first seen 2026-10-17 05:33:04 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970539/",
-      "type": "Malware distribution"
-    },
-    "cnd.bagsrad.com": {
-      "desc": "Quasar RAT botnet_cc first seen 2026-10-19 07:50:26 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973977/",
-      "type": "C2"
-    },
-    "dadhettniaedas.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970939/",
-      "type": "C2"
-    },
-    "deushack.org": {
-      "desc": "donut_injector payload_delivery first seen 2026-10-19 13:55:24 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974343/",
-      "type": "Malware distribution"
-    },
-    "dns.bagsrad.com": {
-      "desc": "Quasar RAT botnet_cc first seen 2026-10-19 07:50:26 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973976/",
-      "type": "C2"
-    },
-    "edeooigg.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970920/",
-      "type": "C2"
-    },
-    "eeithfaeue.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970950/",
-      "type": "C2"
-    },
-    "eelifjdoeae.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970910/",
-      "type": "C2"
-    },
-    "ejtteyte.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970912/",
-      "type": "C2"
-    },
-    "eortxnrra.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970936/",
-      "type": "C2"
-    },
-    "eporiaeal.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970925/",
-      "type": "C2"
-    },
-    "financiales-groupe.com": {
-      "desc": "Cobalt Strike botnet_cc first seen 2026-10-16 15:45:51 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970050/",
-      "type": "C2"
-    },
-    "finikasi.homes": {
-      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:49 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970654/",
-      "type": "C2"
-    },
-    "firstalwayshere.com": {
-      "desc": "WARDENStealer payload_delivery first seen 2026-10-17 05:32:22 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970790/",
-      "type": "Malware distribution"
-    },
-    "fmyummk.com": {
-      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:22 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970789/",
-      "type": "C2"
-    },
-    "fr.8mytogel.org": {
-      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1971103/",
-      "type": "C2"
-    },
-    "free-steam-gifts-promo.site": {
-      "desc": "Steam community credential stealer clone.",
-      "severity": "High",
-      "type": "Scam / Phishing"
-    },
-    "gdalla.pics": {
-      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:45 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970656/",
-      "type": "C2"
-    },
-    "ghostx-panel-default-rtdb.firebaseio.com": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:04 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1972782/",
-      "type": "C2"
-    },
-    "ghostx-panel.firebasestorage.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:03 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1972783/",
-      "type": "C2"
-    },
-    "gwgamior.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970946/",
-      "type": "C2"
-    },
-    "happyslot88pg.co": {
-      "desc": "AsyncRAT botnet_cc first seen 2026-10-16 12:20:22 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969571/",
-      "type": "C2"
-    },
-    "hdfc-bank-8ab58-default-rtdb.firebaseio.com": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973617/",
-      "type": "C2"
-    },
-    "hdfc-bank-8ab58.firebasestorage.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973618/",
-      "type": "C2"
-    },
-    "hjoeseiatehn.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970916/",
-      "type": "C2"
-    },
-    "hotuehett.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970948/",
-      "type": "C2"
-    },
-    "hruieeoefeor.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970911/",
-      "type": "C2"
-    },
-    "hsjornoboetotl.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970945/",
-      "type": "C2"
-    },
-    "index.searchchinas.top": {
-      "desc": "Cobalt Strike botnet_cc first seen 2026-10-17 03:45:41 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970804/",
-      "type": "C2"
-    },
-    "iowheuhle.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970938/",
-      "type": "C2"
-    },
-    "isnhituoyioe.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970933/",
-      "type": "C2"
-    },
-    "italleatgeeash.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970923/",
-      "type": "C2"
-    },
-    "jksdjkjs.cc": {
-      "desc": "ValleyRAT botnet_cc first seen 2026-10-16 07:20:21 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969160/",
-      "type": "C2"
-    },
-    "ju.8-hhh.org": {
-      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1971102/",
-      "type": "C2"
-    },
-    "k.88mdc.org": {
-      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1971105/",
-      "type": "C2"
-    },
-    "kingremcos2026.duckdns.org": {
-      "desc": "Remcos botnet_cc first seen 2026-10-20 14:25:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1975882/",
-      "type": "C2"
-    },
-    "kjhg.lol": {
-      "desc": "Hermes botnet_cc first seen 2026-10-19 06:20:10 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973895/",
-      "type": "C2"
-    },
-    "kjhg.shop": {
-      "desc": "Hermes botnet_cc first seen 2026-10-19 06:20:09 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973896/",
-      "type": "C2"
-    },
-    "krakiiatoe.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970921/",
-      "type": "C2"
-    },
-    "l.7sot.org": {
-      "desc": "Vidar botnet_cc first seen 2026-10-17 08:59:43 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1971084/",
-      "type": "C2"
-    },
-    "lagbout6ouisft01.duckdns.org": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:28 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969580/",
-      "type": "C2"
-    },
-    "lagbout6ouisft02.duckdns.org": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:28 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969581/",
-      "type": "C2"
-    },
-    "lagbout6ouisft03.duckdns.org": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:29 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969582/",
-      "type": "C2"
-    },
-    "lagbout6ouisft04.duckdns.org": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:29 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969583/",
-      "type": "C2"
-    },
-    "lagbout6ouisft05.duckdns.org": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:29 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969584/",
-      "type": "C2"
-    },
-    "lgeioayhrehsoa.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970909/",
-      "type": "C2"
-    },
-    "login-secure-appleid.biz": {
-      "desc": "Apple ID cloud credential harvesting clone.",
-      "severity": "Critical",
-      "type": "Phishing"
-    },
-    "m3.888-fw.com": {
-      "desc": "Vidar botnet_cc first seen 2026-10-16 06:34:46 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968967/",
-      "type": "C2"
-    },
-    "metamask-synchronize-portal.live": {
-      "desc": "Deceptive Web3 seed phrase drainer.",
-      "severity": "Critical",
-      "type": "Crypto Phishing"
-    },
-    "model.bytedrop.cc": {
-      "desc": "ACR Stealer botnet_cc first seen 2026-10-19 09:23:56 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974168/",
-      "type": "C2"
-    },
-    "mparivahan.hs.vc": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:02 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1972786/",
-      "type": "C2"
-    },
-    "mparivahan772.s.gy": {
-      "desc": "SMSspy payload_delivery first seen 2026-10-19 06:20:53 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973185/",
-      "type": "Malware distribution"
-    },
-    "mparivahansms-default-rtdb.asia-southeast1.firebasedatabase.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:19 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973615/",
-      "type": "C2"
-    },
-    "mparivahansms.firebasestorage.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973616/",
-      "type": "C2"
-    },
-    "myuse-60542-default-rtdb.asia-southeast1.firebasedatabase.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:03 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1972784/",
-      "type": "C2"
-    },
-    "myuse-60542.firebasestorage.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:03 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1972785/",
-      "type": "C2"
-    },
-    "neekxhkta.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970922/",
-      "type": "C2"
-    },
-    "nexus-panel.in": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:04 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1972781/",
-      "type": "C2"
-    },
-    "nnnoeogotiitso.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970941/",
-      "type": "C2"
-    },
-    "nsx1-7f7aa-default-rtdb.asia-southeast1.firebasedatabase.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:21 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973588/",
-      "type": "C2"
-    },
-    "nsx1-7f7aa.firebasestorage.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:20 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973589/",
-      "type": "C2"
-    },
-    "ntneioehnetsae.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970942/",
-      "type": "C2"
-    },
-    "oalaoiodgne.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970947/",
-      "type": "C2"
-    },
-    "oatrafoateeve.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970917/",
-      "type": "C2"
-    },
-    "oldisgoldgameis.com": {
-      "desc": "WARDENStealer payload_delivery first seen 2026-10-17 05:32:21 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970791/",
-      "type": "Malware distribution"
-    },
-    "panel-sms.firebasestorage.app": {
-      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973619/",
-      "type": "C2"
-    },
-    "pgieohops.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970924/",
-      "type": "C2"
-    },
-    "pm44.gotdns.ch": {
-      "desc": "Remcos botnet_cc first seen 2026-10-19 13:10:21 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974318/",
-      "type": "C2"
-    },
-    "pulsge.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968262/",
-      "type": "C2"
-    },
-    "qmmrenctaq.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970944/",
-      "type": "C2"
-    },
-    "randlain.mom": {
-      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:46 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970655/",
-      "type": "C2"
-    },
-    "rembxp.top": {
-      "desc": "Remcos botnet_cc first seen 2026-10-19 13:10:22 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974319/",
-      "type": "C2"
-    },
-    "rshtgesa.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970929/",
-      "type": "C2"
-    },
-    "satinett.pics": {
-      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:42 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970659/",
-      "type": "C2"
-    },
-    "shopvumanhcuong.com": {
-      "desc": "AsyncRAT botnet_cc first seen 2026-10-20 06:40:18 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1975132/",
-      "type": "C2"
-    },
-    "sirucxaian.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970907/",
-      "type": "C2"
-    },
-    "skahfy.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968263/",
-      "type": "C2"
-    },
-    "slotwallet777.co": {
-      "desc": "AsyncRAT botnet_cc first seen 2026-10-19 13:00:24 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974305/",
-      "type": "C2"
-    },
-    "snjimghnferfa.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970943/",
-      "type": "C2"
-    },
-    "sodsce.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968264/",
-      "type": "C2"
-    },
-    "sparfk.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968265/",
-      "type": "C2"
-    },
-    "speeoporj.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970932/",
-      "type": "C2"
-    },
-    "srroolreoaar.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970914/",
-      "type": "C2"
-    },
-    "ssewciriwu.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970928/",
-      "type": "C2"
-    },
-    "stpata.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968266/",
-      "type": "C2"
-    },
-    "straely.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968267/",
-      "type": "C2"
-    },
-    "summxif.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968268/",
-      "type": "C2"
-    },
-    "synerfy.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968269/",
-      "type": "C2"
-    },
-    "t.88mdc.org": {
-      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1971104/",
-      "type": "C2"
-    },
-    "tahinhtfenwimi.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970931/",
-      "type": "C2"
-    },
-    "teeoklnhrntgj.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970940/",
-      "type": "C2"
-    },
-    "teiittoeg.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970937/",
-      "type": "C2"
-    },
-    "tfhhegbi.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970934/",
-      "type": "C2"
-    },
-    "tiumloir.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970913/",
-      "type": "C2"
-    },
-    "trexnd.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968270/",
-      "type": "C2"
-    },
-    "trucnher.skin": {
-      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:43 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970657/",
-      "type": "C2"
-    },
-    "u.86idn.com": {
-      "desc": "Vidar botnet_cc first seen 2026-10-16 06:34:49 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968955/",
-      "type": "C2"
-    },
-    "u973.cantdown.su": {
-      "desc": "XWorm botnet_cc first seen 2026-10-20 16:21:47 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1976080/",
-      "type": "C2"
-    },
-    "uffhtyiqtmiea.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970918/",
-      "type": "C2"
-    },
-    "upi.log.30ca777733df8aa6e4404bd8beadb65c36105e9346e15819152e9ecc4.fd746f6f221867dd6d504e00569cc108bbf5c5e0daf7628d26285775.86174a0a1dc3dd1625fc62e486572c26425c95ffef342f6dddb5ffe0.1b1f3f2edc.7605f6.pnalumni.dgitd.anchorbolnorth.com": {
-      "desc": "Cobalt Strike botnet_cc first seen 2026-10-19 13:01:49 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974270/",
-      "type": "C2"
-    },
-    "usefilebox.com": {
-      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:33:07 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970483/",
-      "type": "C2"
-    },
-    "vangrd.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968271/",
-      "type": "C2"
-    },
-    "vedfex.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968272/",
-      "type": "C2"
-    },
-    "veldty.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968273/",
-      "type": "C2"
-    },
-    "vewknyie.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970915/",
-      "type": "C2"
-    },
-    "vfrtegx.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968274/",
-      "type": "C2"
-    },
-    "vistda.biz": {
-      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1968275/",
-      "type": "C2"
-    },
-    "webnghean.com": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:29 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1969532/",
-      "type": "C2"
-    },
-    "www.jennywilliamlogistics.com": {
-      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:24 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973913/",
-      "type": "C2"
-    },
-    "www.jennywilliamlogisticsbackup.com": {
-      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:24 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973914/",
-      "type": "C2"
-    },
-    "www.jennywilliamlogisticsbackup1.com": {
-      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:24 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973915/",
-      "type": "C2"
-    },
-    "www.jennywilliamlogisticsbackup2.com": {
-      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:25 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1973916/",
-      "type": "C2"
-    },
-    "www.xmmtbxbackup3.com": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 17:40:22 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970206/",
-      "type": "C2"
-    },
-    "www.xmmtbxbackup4.com": {
-      "desc": "Remcos botnet_cc first seen 2026-10-16 17:40:22 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970207/",
-      "type": "C2"
-    },
-    "xitldefl.com": {
-      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1970935/",
-      "type": "C2"
-    },
-    "xxx.sytes.net": {
-      "desc": "Remcos botnet_cc first seen 2026-10-19 13:10:21 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1974317/",
-      "type": "C2"
-    },
-    "zn.8-hhh.org": {
-      "desc": "Vidar botnet_cc first seen 2026-10-17 11:05:25 UTC (ThreatFox)",
-      "severity": "High",
-      "source_url": "https://threatfox.abuse.ch/ioc/1971071/",
-      "type": "C2"
-    }
-  },
-  "feed_version": "2026.10.20-v1",
   "signatures": [
     {
       "desc": "Advanced information stealer targeting browser credentials.",
@@ -2466,13 +1614,865 @@
       "type": "Malware"
     }
   ],
+  "domains": {
+    "6krhuxhtp0k5.bestminecraftplayer.fun": {
+      "desc": "Hades botnet_cc first seen 2026-10-20 05:13:36 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974788/",
+      "type": "C2"
+    },
+    "7k.iakmialor.web.id": {
+      "desc": "Vidar botnet_cc first seen 2026-10-16 10:49:12 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969354/",
+      "type": "C2"
+    },
+    "8-hhh.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 11:05:25 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971072/",
+      "type": "C2"
+    },
+    "98winnnn.online": {
+      "desc": "AsyncRAT botnet_cc first seen 2026-10-20 13:20:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1975797/",
+      "type": "C2"
+    },
+    "aloemqvnth.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970949/",
+      "type": "C2"
+    },
+    "andromeda-d389d.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973620/",
+      "type": "C2"
+    },
+    "aneldhasy.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970927/",
+      "type": "C2"
+    },
+    "anhwsoowoe.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970926/",
+      "type": "C2"
+    },
+    "api.failproxy.space": {
+      "desc": "Stealc botnet_cc first seen 2026-10-16 06:10:31 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968846/",
+      "type": "C2"
+    },
+    "arkwemiinoex.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970930/",
+      "type": "C2"
+    },
+    "articio.top": {
+      "desc": "ValleyRAT botnet_cc first seen 2026-10-20 05:45:27 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1975074/",
+      "type": "C2"
+    },
+    "atiagwcvltealv.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970919/",
+      "type": "C2"
+    },
+    "audit.bitfetch.cc": {
+      "desc": "ACR Stealer botnet_cc first seen 2026-10-19 15:12:30 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974396/",
+      "type": "C2"
+    },
+    "b.7sot.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 08:59:43 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971083/",
+      "type": "C2"
+    },
+    "backdoor.61116222b2.buzz": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:33 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969544/",
+      "type": "C2"
+    },
+    "backdoor.afribus.co": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:32 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969541/",
+      "type": "C2"
+    },
+    "backdoor.doyanslot.us": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:33 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969543/",
+      "type": "C2"
+    },
+    "backdoor.fifa55hr.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:33 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969542/",
+      "type": "C2"
+    },
+    "backdoor.fifa55red.me": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:34 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969545/",
+      "type": "C2"
+    },
+    "backdoor.qh88eu.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:32 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969539/",
+      "type": "C2"
+    },
+    "bcopleesr.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970908/",
+      "type": "C2"
+    },
+    "bellows.pics": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:43 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970658/",
+      "type": "C2"
+    },
+    "bestminecraftplayer.fun": {
+      "desc": "Hades botnet_cc first seen 2026-10-20 05:13:35 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974789/",
+      "type": "C2"
+    },
+    "buillingereio.com": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:23 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970788/",
+      "type": "C2"
+    },
+    "cdn.img.76e1e5fa.pnalumni.dgitd.anchorbolnorth.com": {
+      "desc": "Cobalt Strike botnet_cc first seen 2026-10-19 13:01:51 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974269/",
+      "type": "C2"
+    },
+    "cdn.wovplaying.help": {
+      "desc": "SalatStealer payload_delivery first seen 2026-10-17 05:33:04 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970539/",
+      "type": "Malware distribution"
+    },
+    "cnd.bagsrad.com": {
+      "desc": "Quasar RAT botnet_cc first seen 2026-10-19 07:50:26 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973977/",
+      "type": "C2"
+    },
+    "dadhettniaedas.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970939/",
+      "type": "C2"
+    },
+    "deushack.org": {
+      "desc": "donut_injector payload_delivery first seen 2026-10-19 13:55:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974343/",
+      "type": "Malware distribution"
+    },
+    "dns.bagsrad.com": {
+      "desc": "Quasar RAT botnet_cc first seen 2026-10-19 07:50:26 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973976/",
+      "type": "C2"
+    },
+    "edeooigg.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970920/",
+      "type": "C2"
+    },
+    "eeithfaeue.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970950/",
+      "type": "C2"
+    },
+    "eelifjdoeae.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970910/",
+      "type": "C2"
+    },
+    "ejtteyte.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970912/",
+      "type": "C2"
+    },
+    "eortxnrra.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970936/",
+      "type": "C2"
+    },
+    "eporiaeal.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970925/",
+      "type": "C2"
+    },
+    "financiales-groupe.com": {
+      "desc": "Cobalt Strike botnet_cc first seen 2026-10-16 15:45:51 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970050/",
+      "type": "C2"
+    },
+    "finikasi.homes": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:49 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970654/",
+      "type": "C2"
+    },
+    "firstalwayshere.com": {
+      "desc": "WARDENStealer payload_delivery first seen 2026-10-17 05:32:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970790/",
+      "type": "Malware distribution"
+    },
+    "fmyummk.com": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970789/",
+      "type": "C2"
+    },
+    "fr.8mytogel.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971103/",
+      "type": "C2"
+    },
+    "free-steam-gifts-promo.site": {
+      "desc": "Steam community credential stealer clone.",
+      "severity": "High",
+      "type": "Scam / Phishing"
+    },
+    "gdalla.pics": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:45 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970656/",
+      "type": "C2"
+    },
+    "ghostx-panel-default-rtdb.firebaseio.com": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:04 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972782/",
+      "type": "C2"
+    },
+    "ghostx-panel.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:03 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972783/",
+      "type": "C2"
+    },
+    "gwgamior.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970946/",
+      "type": "C2"
+    },
+    "happyslot88pg.co": {
+      "desc": "AsyncRAT botnet_cc first seen 2026-10-16 12:20:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969571/",
+      "type": "C2"
+    },
+    "hdfc-bank-8ab58-default-rtdb.firebaseio.com": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973617/",
+      "type": "C2"
+    },
+    "hdfc-bank-8ab58.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973618/",
+      "type": "C2"
+    },
+    "hjoeseiatehn.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970916/",
+      "type": "C2"
+    },
+    "hotuehett.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970948/",
+      "type": "C2"
+    },
+    "hruieeoefeor.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970911/",
+      "type": "C2"
+    },
+    "hsjornoboetotl.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970945/",
+      "type": "C2"
+    },
+    "index.searchchinas.top": {
+      "desc": "Cobalt Strike botnet_cc first seen 2026-10-17 03:45:41 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970804/",
+      "type": "C2"
+    },
+    "iowheuhle.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970938/",
+      "type": "C2"
+    },
+    "isnhituoyioe.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970933/",
+      "type": "C2"
+    },
+    "italleatgeeash.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970923/",
+      "type": "C2"
+    },
+    "jksdjkjs.cc": {
+      "desc": "ValleyRAT botnet_cc first seen 2026-10-16 07:20:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969160/",
+      "type": "C2"
+    },
+    "ju.8-hhh.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971102/",
+      "type": "C2"
+    },
+    "k.88mdc.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971105/",
+      "type": "C2"
+    },
+    "kingremcos2026.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-20 14:25:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1975882/",
+      "type": "C2"
+    },
+    "kjhg.lol": {
+      "desc": "Hermes botnet_cc first seen 2026-10-19 06:20:10 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973895/",
+      "type": "C2"
+    },
+    "kjhg.shop": {
+      "desc": "Hermes botnet_cc first seen 2026-10-19 06:20:09 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973896/",
+      "type": "C2"
+    },
+    "krakiiatoe.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970921/",
+      "type": "C2"
+    },
+    "l.7sot.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 08:59:43 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971084/",
+      "type": "C2"
+    },
+    "lagbout6ouisft01.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:28 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969580/",
+      "type": "C2"
+    },
+    "lagbout6ouisft02.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:28 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969581/",
+      "type": "C2"
+    },
+    "lagbout6ouisft03.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:29 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969582/",
+      "type": "C2"
+    },
+    "lagbout6ouisft04.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:29 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969583/",
+      "type": "C2"
+    },
+    "lagbout6ouisft05.duckdns.org": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:30:29 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969584/",
+      "type": "C2"
+    },
+    "lgeioayhrehsoa.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970909/",
+      "type": "C2"
+    },
+    "login-secure-appleid.biz": {
+      "desc": "Apple ID cloud credential harvesting clone.",
+      "severity": "Critical",
+      "type": "Phishing"
+    },
+    "m3.888-fw.com": {
+      "desc": "Vidar botnet_cc first seen 2026-10-16 06:34:46 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968967/",
+      "type": "C2"
+    },
+    "metamask-synchronize-portal.live": {
+      "desc": "Deceptive Web3 seed phrase drainer.",
+      "severity": "Critical",
+      "type": "Crypto Phishing"
+    },
+    "model.bytedrop.cc": {
+      "desc": "ACR Stealer botnet_cc first seen 2026-10-19 09:23:56 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974168/",
+      "type": "C2"
+    },
+    "mparivahan.hs.vc": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:02 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972786/",
+      "type": "C2"
+    },
+    "mparivahan772.s.gy": {
+      "desc": "SMSspy payload_delivery first seen 2026-10-19 06:20:53 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973185/",
+      "type": "Malware distribution"
+    },
+    "mparivahansms-default-rtdb.asia-southeast1.firebasedatabase.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:19 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973615/",
+      "type": "C2"
+    },
+    "mparivahansms.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973616/",
+      "type": "C2"
+    },
+    "myuse-60542-default-rtdb.asia-southeast1.firebasedatabase.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:03 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972784/",
+      "type": "C2"
+    },
+    "myuse-60542.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:03 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972785/",
+      "type": "C2"
+    },
+    "neekxhkta.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970922/",
+      "type": "C2"
+    },
+    "nexus-panel.in": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:21:04 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1972781/",
+      "type": "C2"
+    },
+    "nnnoeogotiitso.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970941/",
+      "type": "C2"
+    },
+    "nsx1-7f7aa-default-rtdb.asia-southeast1.firebasedatabase.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973588/",
+      "type": "C2"
+    },
+    "nsx1-7f7aa.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:20 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973589/",
+      "type": "C2"
+    },
+    "ntneioehnetsae.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970942/",
+      "type": "C2"
+    },
+    "oalaoiodgne.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970947/",
+      "type": "C2"
+    },
+    "oatrafoateeve.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970917/",
+      "type": "C2"
+    },
+    "oldisgoldgameis.com": {
+      "desc": "WARDENStealer payload_delivery first seen 2026-10-17 05:32:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970791/",
+      "type": "Malware distribution"
+    },
+    "panel-sms.firebasestorage.app": {
+      "desc": "SMSspy botnet_cc first seen 2026-10-19 06:20:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973619/",
+      "type": "C2"
+    },
+    "pgieohops.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970924/",
+      "type": "C2"
+    },
+    "pm44.gotdns.ch": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 13:10:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974318/",
+      "type": "C2"
+    },
+    "pulsge.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968262/",
+      "type": "C2"
+    },
+    "qmmrenctaq.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970944/",
+      "type": "C2"
+    },
+    "randlain.mom": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:46 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970655/",
+      "type": "C2"
+    },
+    "rembxp.top": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 13:10:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974319/",
+      "type": "C2"
+    },
+    "rshtgesa.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970929/",
+      "type": "C2"
+    },
+    "satinett.pics": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:42 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970659/",
+      "type": "C2"
+    },
+    "shopvumanhcuong.com": {
+      "desc": "AsyncRAT botnet_cc first seen 2026-10-20 06:40:18 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1975132/",
+      "type": "C2"
+    },
+    "sirucxaian.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:16 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970907/",
+      "type": "C2"
+    },
+    "skahfy.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968263/",
+      "type": "C2"
+    },
+    "slotwallet777.co": {
+      "desc": "AsyncRAT botnet_cc first seen 2026-10-19 13:00:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974305/",
+      "type": "C2"
+    },
+    "snjimghnferfa.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970943/",
+      "type": "C2"
+    },
+    "sodsce.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968264/",
+      "type": "C2"
+    },
+    "sparfk.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968265/",
+      "type": "C2"
+    },
+    "speeoporj.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970932/",
+      "type": "C2"
+    },
+    "srroolreoaar.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970914/",
+      "type": "C2"
+    },
+    "ssewciriwu.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970928/",
+      "type": "C2"
+    },
+    "stpata.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968266/",
+      "type": "C2"
+    },
+    "straely.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968267/",
+      "type": "C2"
+    },
+    "summxif.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968268/",
+      "type": "C2"
+    },
+    "synerfy.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968269/",
+      "type": "C2"
+    },
+    "t.88mdc.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 09:08:13 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971104/",
+      "type": "C2"
+    },
+    "tahinhtfenwimi.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970931/",
+      "type": "C2"
+    },
+    "teeoklnhrntgj.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970940/",
+      "type": "C2"
+    },
+    "teiittoeg.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970937/",
+      "type": "C2"
+    },
+    "tfhhegbi.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970934/",
+      "type": "C2"
+    },
+    "tiumloir.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970913/",
+      "type": "C2"
+    },
+    "trexnd.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968270/",
+      "type": "C2"
+    },
+    "trucnher.skin": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:32:43 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970657/",
+      "type": "C2"
+    },
+    "u.86idn.com": {
+      "desc": "Vidar botnet_cc first seen 2026-10-16 06:34:49 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968955/",
+      "type": "C2"
+    },
+    "u973.cantdown.su": {
+      "desc": "XWorm botnet_cc first seen 2026-10-20 16:21:47 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1976080/",
+      "type": "C2"
+    },
+    "uffhtyiqtmiea.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970918/",
+      "type": "C2"
+    },
+    "upi.log.30ca777733df8aa6e4404bd8beadb65c36105e9346e15819152e9ecc4.fd746f6f221867dd6d504e00569cc108bbf5c5e0daf7628d26285775.86174a0a1dc3dd1625fc62e486572c26425c95ffef342f6dddb5ffe0.1b1f3f2edc.7605f6.pnalumni.dgitd.anchorbolnorth.com": {
+      "desc": "Cobalt Strike botnet_cc first seen 2026-10-19 13:01:49 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974270/",
+      "type": "C2"
+    },
+    "usefilebox.com": {
+      "desc": "WARDENStealer botnet_cc first seen 2026-10-17 05:33:07 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970483/",
+      "type": "C2"
+    },
+    "vangrd.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968271/",
+      "type": "C2"
+    },
+    "vedfex.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968272/",
+      "type": "C2"
+    },
+    "veldty.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968273/",
+      "type": "C2"
+    },
+    "vewknyie.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970915/",
+      "type": "C2"
+    },
+    "vfrtegx.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968274/",
+      "type": "C2"
+    },
+    "vistda.biz": {
+      "desc": "Remus botnet_cc first seen 2026-10-15 19:00:48 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1968275/",
+      "type": "C2"
+    },
+    "webnghean.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 12:00:29 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1969532/",
+      "type": "C2"
+    },
+    "www.jennywilliamlogistics.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973913/",
+      "type": "C2"
+    },
+    "www.jennywilliamlogisticsbackup.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973914/",
+      "type": "C2"
+    },
+    "www.jennywilliamlogisticsbackup1.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:24 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973915/",
+      "type": "C2"
+    },
+    "www.jennywilliamlogisticsbackup2.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 06:05:25 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1973916/",
+      "type": "C2"
+    },
+    "www.xmmtbxbackup3.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 17:40:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970206/",
+      "type": "C2"
+    },
+    "www.xmmtbxbackup4.com": {
+      "desc": "Remcos botnet_cc first seen 2026-10-16 17:40:22 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970207/",
+      "type": "C2"
+    },
+    "xitldefl.com": {
+      "desc": "DeerStealer botnet_cc first seen 2026-10-17 05:54:17 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1970935/",
+      "type": "C2"
+    },
+    "xxx.sytes.net": {
+      "desc": "Remcos botnet_cc first seen 2026-10-19 13:10:21 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1974317/",
+      "type": "C2"
+    },
+    "zn.8-hhh.org": {
+      "desc": "Vidar botnet_cc first seen 2026-10-17 11:05:25 UTC (ThreatFox)",
+      "severity": "High",
+      "source_url": "https://threatfox.abuse.ch/ioc/1971071/",
+      "type": "C2"
+    }
+  },
+  "feed_version": "2026.11.08-v1",
   "metadata": {
     "key_id": "k2",
-    "issued_at": 1792682456,
-    "expires_at": 1793892056,
+    "issued_at": 1794105584,
+    "expires_at": 1795315184,
     "revoked_key_ids": [
       "k1"
     ]
   },
-  "signature": "b20c6d4482ecfda6772d25a662942d79ecf6f18f51280362f762ee81a0988023e8297d98fe4abcfd68753d911c0ba1d6cad86821bd34cdada2e60af6c1c15b0e"
+  "signature": "1fbdaebc2706f992146f8003b7d907e0f303fb94c9caaf4d5b06534a0d071dfdf02a5ea605a873d8dc9aa1b57c7c536ccef1fda9e7683d1d14c23d31229ccd07"
 }
