@@ -2465,14 +2465,14 @@
       "type": "C2"
     }
   },
-  "feed_version": "2026.11.08-v1",
+  "feed_version": "2026.11.08-v2",
   "metadata": {
     "key_id": "k2",
-    "issued_at": 1794105584,
-    "expires_at": 1795315184,
+    "issued_at": 1794105614,
+    "expires_at": 1795315214,
     "revoked_key_ids": [
       "k1"
     ]
   },
-  "signature": "1fbdaebc2706f992146f8003b7d907e0f303fb94c9caaf4d5b06534a0d071dfdf02a5ea605a873d8dc9aa1b57c7c536ccef1fda9e7683d1d14c23d31229ccd07"
+  "signature": "efcae29fc8abb89d0875d2331f55721f0f0c13d4a720bd7ee485a9b07f682a0be12fecfe44643f11ab5e1e09ecb80ef2552ed6146bd6c2412ea77524d2a02a08"
 }
