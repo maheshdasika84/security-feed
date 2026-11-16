@@ -92,9 +92,12 @@ def verify(feed, now=None):
     expires = _timestamp(meta.get("expires_at"))
     if expires is not None and now > expires:
         return False, "feed has expired (metadata.expires_at is in the past)"
-    issued = _timestamp(meta.get("issued_at") or meta.get("timestamp"))
-    if issued is not None and now - issued > MAX_AGE_DAYS * 86400:
-        return False, f"feed is older than {MAX_AGE_DAYS:.0f} days"
+    issued = _timestamp(meta.get("issued_at") or meta.get("timestamp") or meta.get("generated_at"))
+    if issued is not None:
+        if issued - now > 3600:
+            return False, "feed issuance timestamp is in the future"
+        if now - issued > MAX_AGE_DAYS * 86400:
+            return False, f"feed is older than {MAX_AGE_DAYS:.0f} days"
     if "checksum" in feed and "signatures" in feed:
         expected = hashlib.sha256(json.dumps(feed["signatures"], sort_keys=True,
                                              separators=(",", ":")).encode("utf-8")).hexdigest()

@@ -24,12 +24,35 @@ jobs:
         id: expiry
         run: |
           python3 - <<'EOF' >> "$GITHUB_OUTPUT"
-          import json, time
-          meta = json.load(open("threat_feed.json")).get("metadata") or {}
-          exp = float(meta.get("expires_at", 0))
-          days = (exp - time.time()) / 86400
+          import datetime, json, os, time
+
+          def parse_exp(val):
+              if not val:
+                  return 0.0
+              try:
+                  return float(val)
+              except (ValueError, TypeError):
+                  pass
+              if isinstance(val, str):
+                  val = val.rstrip("Z")
+                  for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
+                      try:
+                          dt = datetime.datetime.strptime(val, fmt)
+                          return dt.replace(tzinfo=datetime.timezone.utc).timestamp()
+                      except ValueError:
+                          pass
+              return 0.0
+
+          exp = 0.0
+          for fname in ["threat_feed.json", "cve_feed.json"]:
+              if os.path.isfile(fname):
+                  meta = json.load(open(fname)).get("metadata") or {}
+                  f_exp = parse_exp(meta.get("expires_at"))
+                  if f_exp > 0 and (exp == 0.0 or f_exp < exp):
+                      exp = f_exp
+          days = (exp - time.time()) / 86400 if exp > 0 else 999.0
           print(f"days={days:.1f}")
-          print(f"date={time.strftime('%Y-%m-%d', time.gmtime(exp))}")
+          print(f"date={time.strftime('%Y-%m-%d', time.gmtime(exp if exp > 0 else time.time()))}")
           print(f"due={'true' if days <= 3 else 'false'}")
           EOF
 

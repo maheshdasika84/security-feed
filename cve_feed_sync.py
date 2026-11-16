@@ -43,6 +43,26 @@ FEED_KEY_SCOPES = {
 # Reviewed catalog of CISA KEV CVEs affecting Android apps with VERIFIED fixed versions.
 # Strictly no free-text false positives, no desktop apps, and no 999.0 placeholders.
 VERIFIED_ANDROID_KEV_CVES: Dict[str, List[Dict[str, Any]]] = {
+    "CVE-2026-125350": [
+        {
+            "package_name": "com.android.chrome",
+            "app_name": "Google Chrome",
+            "fixed_version": "157.0.8103.50",
+            "fixed_version_code": 0,
+            "severity": "High",
+            "title": "Chromium XML Use-After-Free",
+            "summary": "Use-after-free in XML component in Google Chrome prior to 157.0.8103.50 allows remote code execution inside the sandbox; actively exploited (CISA KEV 2026-11-10).",
+        },
+        {
+            "package_name": "com.google.android.webview",
+            "app_name": "Android System WebView",
+            "fixed_version": "157.0.8103.50",
+            "fixed_version_code": 0,
+            "severity": "High",
+            "title": "Chromium XML Use-After-Free",
+            "summary": "Use-after-free in XML component in Google Chromium prior to 157.0.8103.50 allows remote code execution inside the sandbox; actively exploited (CISA KEV 2026-11-10).",
+        },
+    ],
     "CVE-2023-4863": [
         {
             "package_name": "com.android.chrome",
@@ -408,6 +428,201 @@ def fetch_cisa_kev_catalog(kev_url: str = CISA_KEV_URL, local_file: Optional[str
         return data.get("vulnerabilities", [])
 
 
+# Any exclusion, negation or "leave alone" wording inside an accepted fix clause
+# means the clause does not unambiguously state which product is fixed, so the
+# record fails closed. This is a backstop only: package authority for joint
+# advisories is granted solely by the positive allow-list below, never by
+# subtracting negated product mentions.
+_FIX_CLAUSE_EXCLUSION_RE = re.compile(
+    r"\b(?:not|never|no|none|neither|nor|without|except|excluding|exclude[sd]?|leaving|leaves?|"
+    r"unchanged|unaffected|untouched|unmodified|unpatched|unfixed|as\s+is|skip(?:s|ping)?|"
+    r"omit(?:s|ting)?|other\s+than|apart\s+from|but)\b|n't\b",
+    re.IGNORECASE,
+)
+
+_CHROME_NAME = r"\b(?:google\s+)?(?:chrome|chromium)(?:\s+for\s+android)?\b"
+_WEBVIEW_NAME = r"\b(?:android\s+)?(?:system\s+)?webview\b"
+_WHATSAPP_NAME = r"\b(?:whatsapp(?:\s+messenger)?(?:\s+for\s+android)?)\b"
+_WHATSAPP_BUSINESS_NAME = r"\b(?:(?:whatsapp\s+)?business(?:\s+for\s+android)?|w4b)\b"
+_JOINT_CHROME_WEBVIEW = (
+    rf"(?:(?:both\s+)?(?:{_CHROME_NAME}\s+(?:and|&)\s+{_WEBVIEW_NAME}|{_WEBVIEW_NAME}\s+(?:and|&)\s+{_CHROME_NAME})(?:\s+for\s+android)?"
+    r"|\bboth\s+(?:android\s+)?(?:products|apps|applications|packages)\b)"
+)
+_JOINT_WHATSAPP = (
+    rf"(?:(?:both\s+)?(?:{_WHATSAPP_NAME}\s+(?:and|&)\s+{_WHATSAPP_BUSINESS_NAME}|{_WHATSAPP_BUSINESS_NAME}\s+(?:and|&)\s+{_WHATSAPP_NAME})"
+    r"|\bboth(?:\s+(?:whatsapp|android))?(?:\s+(?:products?|apps?|applications?|packages?|clients?))?\b)"
+)
+_OPTIONAL_PREFIX = r"(?:(?:please|users?\s+should|administrators?\s+should|strongly\s+recommended\s+to|recommended\s+to|advised\s+to|must|should)\s+)?"
+_OPTIONAL_SUFFIX = r"(?:\s+(?:immediately|promptly|as\s+soon\s+as\s+possible|now))?"
+
+
+def _is_unversioned_single_product_directive(clause: str, pkg: str) -> bool:
+    """True only when an unversioned directive clause's sole grammatical object is pkg."""
+    text = re.sub(r"\s+", " ", clause).strip(" \t,:.")
+    if pkg == "com.android.chrome":
+        prod = _CHROME_NAME
+    elif pkg == "com.google.android.webview":
+        prod = _WEBVIEW_NAME
+    elif pkg == "com.whatsapp":
+        if re.search(r"\b(?:business|w4b)\b", text, re.IGNORECASE):
+            return False
+        prod = _WHATSAPP_NAME
+    elif pkg == "com.whatsapp.w4b":
+        prod = _WHATSAPP_BUSINESS_NAME
+    else:
+        return False
+    return bool(re.fullmatch(rf"{_OPTIONAL_PREFIX}(?:update|upgrade|patch)\s+{prod}{_OPTIONAL_SUFFIX}", text, re.IGNORECASE))
+
+
+def _is_unversioned_joint_chrome_webview_directive(clause: str) -> bool:
+    """True only when an unversioned directive clause's sole grammatical object is both Chrome and WebView."""
+    text = re.sub(r"\s+", " ", clause).strip(" \t,:.")
+    return bool(re.fullmatch(rf"{_OPTIONAL_PREFIX}(?:update|upgrade|patch)\s+{_JOINT_CHROME_WEBVIEW}{_OPTIONAL_SUFFIX}", text, re.IGNORECASE))
+
+
+def _is_unversioned_joint_whatsapp_directive(clause: str) -> bool:
+    """True only when an unversioned directive clause's sole grammatical object is both WhatsApp and WhatsApp Business."""
+    text = re.sub(r"\s+", " ", clause).strip(" \t,:.")
+    return bool(re.fullmatch(rf"{_OPTIONAL_PREFIX}(?:update|upgrade|patch)\s+{_JOINT_WHATSAPP}{_OPTIONAL_SUFFIX}", text, re.IGNORECASE))
+
+
+def _has_joint_chrome_webview_authority(clause: str, fixed_ver: str, context: str = "") -> bool:
+    """True only when a whole fix clause positively fixes both Chrome and WebView.
+
+    The clause must match one of a closed set of sentence shapes in full:
+    a directive whose object is both products, or a product-less directive
+    (the KEV product field, which names both products, is then the scope).
+    Anything else, including clauses naming one product, a different target
+    such as 'Android', or extra trailing wording, has no joint authority.
+    """
+    text = re.sub(r"\s+", " ", clause).strip(" \t,:.")
+    ver = rf"(?:version\s+)?v?\s*{re.escape(fixed_ver)}(?:\s+or\s+(?:later|newer|higher|above))?{_OPTIONAL_SUFFIX}"
+    generic = r"(?:apply\s+(?:the\s+)?(?:patch|update|fix)|update|upgrade|patch|fixed\s+in|patched\s+in|fixed\s+by\s+updating)"
+
+    forms = (
+        rf"{_OPTIONAL_PREFIX}(?:update|upgrade|patch)\s+{_JOINT_CHROME_WEBVIEW}\s+to\s+{ver}",
+        rf"{_OPTIONAL_PREFIX}{generic}(?:\s+to)?\s+{ver}",
+        rf"{_OPTIONAL_PREFIX}{generic}(?:\s+to)?\s+{ver}\s+(?:for|on|in)\s+{_JOINT_CHROME_WEBVIEW}",
+        rf"{_OPTIONAL_PREFIX}{_JOINT_CHROME_WEBVIEW}\s+(?:are|were|have\s+been|has\s+been|is|was)\s+(?:patched|fixed|updated)\s+in\s+{ver}",
+    )
+    if any(re.fullmatch(form, text, re.IGNORECASE) for form in forms):
+        return True
+    return _is_product_less_directive(clause, fixed_ver)
+
+
+def _has_joint_whatsapp_authority(clause: str, fixed_ver: str) -> bool:
+    """True only when a whole fix clause positively fixes both WhatsApp and WhatsApp Business.
+
+    Note: dual-product WhatsApp records require explicit both-products fix authority
+    (a bare product-less 'Update to version X' is ambiguous across Messenger vs Business).
+    """
+    text = re.sub(r"\s+", " ", clause).strip(" \t,:.")
+    ver = rf"(?:version\s+)?v?\s*{re.escape(fixed_ver)}(?:\s+or\s+(?:later|newer|higher|above))?{_OPTIONAL_SUFFIX}"
+    generic = r"(?:apply\s+(?:the\s+)?(?:patch|update|fix)|update|upgrade|patch|fixed\s+in|patched\s+in|fixed\s+by\s+updating)"
+
+    forms = (
+        rf"{_OPTIONAL_PREFIX}(?:update|upgrade|patch)\s+{_JOINT_WHATSAPP}\s+to\s+{ver}",
+        rf"{_OPTIONAL_PREFIX}{generic}(?:\s+to)?\s+{ver}\s+(?:for|on|in)\s+{_JOINT_WHATSAPP}",
+        rf"{_OPTIONAL_PREFIX}{_JOINT_WHATSAPP}\s+(?:are|were|have\s+been|has\s+been|is|was)\s+(?:patched|fixed|resolved|updated)\s+(?:in|with|by|to)\s+{ver}",
+    )
+    return any(re.fullmatch(form, text, re.IGNORECASE) for form in forms)
+
+
+def _is_product_less_directive(clause: str, fixed_ver: str) -> bool:
+    text = re.sub(r"\s+", " ", clause).strip(" \t,:.")
+    ver = rf"(?:version\s+)?v?\s*{re.escape(fixed_ver)}(?:\s+or\s+(?:later|newer|higher|above))?{_OPTIONAL_SUFFIX}"
+    generic = r"(?:apply\s+(?:the\s+)?(?:patch|update|fix)|update|upgrade|patch|fixed\s+in|patched\s+in|fixed\s+by\s+updating)"
+    productless_forms = (
+        rf"{_OPTIONAL_PREFIX}{generic}(?:\s+to)?\s+{ver}",
+        rf"{_OPTIONAL_PREFIX}(?:apply|install)\s+(?:the\s+)?(?:patch|update|fix)(?:\s+version)?\s+{ver}",
+        rf"{_OPTIONAL_PREFIX}(?:patch|update)\s+version\s+{ver}",
+    )
+    return any(re.fullmatch(f, text, re.IGNORECASE) for f in productless_forms)
+
+
+def _has_single_product_authority(clause: str, pkg: str, fixed_ver: str, context: str = "") -> bool:
+    """True only when a whole fix clause positively fixes the target product or is product-less.
+
+    A single-product record takes a product-less directive (e.g. 'Update to version X',
+    'Apply patch version X') or a directive explicitly naming the target product
+    ('Update Chrome to version X'). A directive naming a different target ('Update Android to version X',
+    'Update Google Play services to version X') has no authority for the package.
+    """
+    text = re.sub(r"\s+", " ", clause).strip(" \t,:.")
+    ver = rf"(?:version\s+)?v?\s*{re.escape(fixed_ver)}(?:\s+or\s+(?:later|newer|higher|above))?{_OPTIONAL_SUFFIX}"
+    generic = r"(?:apply\s+(?:the\s+)?(?:patch|update|fix)|update|upgrade|patch|fixed\s+in|patched\s+in|fixed\s+by\s+updating)"
+
+    if pkg == "com.android.chrome":
+        prod = _CHROME_NAME
+    elif pkg == "com.google.android.webview":
+        prod = _WEBVIEW_NAME
+    elif pkg == "com.whatsapp":
+        prod = _WHATSAPP_NAME
+    elif pkg == "com.whatsapp.w4b":
+        prod = _WHATSAPP_BUSINESS_NAME
+    else:
+        return False
+
+    product_forms = (
+        rf"{_OPTIONAL_PREFIX}(?:update|upgrade|patch)\s+{prod}\s+to\s+{ver}",
+        rf"{_OPTIONAL_PREFIX}{generic}(?:\s+to)?\s+{ver}\s+(?:for|on|in)\s+{prod}",
+        rf"{_OPTIONAL_PREFIX}(?:fixed|patched)\s+in\s+{prod}\s+(?:version\s+)?{ver}",
+        rf"{_OPTIONAL_PREFIX}(?:apply|install)\s+(?:the\s+)?{prod}\s+(?:patch|update|fix)(?:\s+version)?\s+{ver}",
+        rf"{_OPTIONAL_PREFIX}{prod}\s+(?:are|were|have\s+been|has\s+been|is|was)\s+(?:patched|fixed|updated)\s+(?:in|with|by|to)\s+{ver}",
+        rf"{_OPTIONAL_PREFIX}(?:fixed\s+by\s+updating|fixed\s+by\s+upgrading)\s+{prod}\s+to\s+{ver}",
+    )
+    if any(re.fullmatch(f, text, re.IGNORECASE) for f in product_forms):
+        if pkg == "com.whatsapp" and re.search(r"\b(?:business|w4b)\b", text, re.IGNORECASE):
+            return False
+        return True
+
+    if _is_product_less_directive(clause, fixed_ver):
+        return True
+
+    return False
+
+
+def _required_action_has_foreign_directive(action: str, pkg: str, fixed_ver: str) -> bool:
+    """True if any clause in requiredAction targets anything other than pkg.
+
+    On a single-product record, every clause in requiredAction must positively
+    have single-product authority for pkg (either a versioned directive targeting
+    pkg, a product-less versioned directive for fixed_ver, or an unversioned
+    directive whose sole grammatical object is pkg). Substring or incidental
+    mentions (such as 'Install the Android security update for Chrome' or
+    'Install the ChromeOS security update') never satisfy this check and veto the record.
+    """
+    clauses = [c.strip(" \t,:.") for c in re.split(r"(?:\.(?!\d)|[;\n])+", action) if c.strip(" \t,:.")]
+    if not clauses:
+        return True
+    for c in clauses:
+        if not _has_single_product_authority(c, pkg, fixed_ver) and not _is_unversioned_single_product_directive(c, pkg):
+            return True
+    return False
+
+
+def _required_action_has_joint_foreign_directive(action: str, fixed_ver: str) -> bool:
+    """True if any clause in requiredAction for a joint Chrome/WebView record targets a foreign entity."""
+    clauses = [c.strip(" \t,:.") for c in re.split(r"(?:\.(?!\d)|[;\n])+", action) if c.strip(" \t,:.")]
+    if not clauses:
+        return True
+    for c in clauses:
+        if not _has_joint_chrome_webview_authority(c, fixed_ver) and not _is_unversioned_joint_chrome_webview_directive(c):
+            return True
+    return False
+
+
+def _required_action_has_joint_whatsapp_foreign_directive(action: str, fixed_ver: str) -> bool:
+    """True if any clause in requiredAction for a joint WhatsApp record targets a foreign entity."""
+    clauses = [c.strip(" \t,:.") for c in re.split(r"(?:\.(?!\d)|[;\n])+", action) if c.strip(" \t,:.")]
+    if not clauses:
+        return True
+    for c in clauses:
+        if not _has_joint_whatsapp_authority(c, fixed_ver) and not _is_unversioned_joint_whatsapp_directive(c):
+            return True
+    return False
+
+
 def extract_cve_entries(kev_vulns: Any) -> List[Dict[str, Any]]:
     """
     Extracts CVEs affecting reviewed mobile applications.
@@ -450,8 +665,8 @@ def extract_cve_entries(kev_vulns: Any) -> List[Dict[str, Any]]:
         desc = v.get("shortDescription", "")
         vuln_name = v.get("vulnerabilityName", "")
 
-        is_chrome = vendor.lower() == "google" and any(p in product.lower() for p in ["chromium", "chrome", "webview"])
-        is_whatsapp = vendor.lower() in ["meta platforms", "whatsapp", "meta"] and "whatsapp" in product.lower()
+        is_chrome = vendor.lower() == "google" and bool(re.search(r"\b(?:chromium|chrome|webview)\b", product.lower()))
+        is_whatsapp = vendor.lower() in ["meta platforms", "whatsapp", "meta"] and bool(re.search(r"\bwhatsapp\b", product.lower()))
 
         if is_chrome or is_whatsapp:
             product_lower = product.lower()
@@ -462,9 +677,9 @@ def extract_cve_entries(kev_vulns: Any) -> List[Dict[str, Any]]:
 
             # 1. Reject if ANY non-Android platform is mentioned anywhere in the record
             # (product, description, action, vulnerabilityName).
-            # This rejects mixed-platform records (e.g. Android + iOS, Android + Desktop)
+            # This rejects mixed-platform records (e.g. Android + iOS, Android + Desktop, ChromeOS)
             # where version numbers can be ambiguous or platform-specific.
-            non_android_pattern = r"\b(?:desktop|windows|ios|mac|macos|osx|linux|iphone|ipad)\b"
+            non_android_pattern = r"\b(?:desktop|windows|ios|mac|macos|osx|linux|iphone|ipad|chromeos|chrome\s+os)\b"
             if re.search(non_android_pattern, combined_text):
                 logger.info("Skipping unlisted KEV %s: non-Android or mixed platform mentioned in record", cve_id)
                 continue
@@ -494,7 +709,7 @@ def extract_cve_entries(kev_vulns: Any) -> List[Dict[str, Any]]:
             # 4. Check for ambiguous version mentions:
             # Find all version-like patterns (\d+\.\d+(?:\.\d+)*) across action, desc, and product.
             # Exclude CVE IDs (CVE-YYYY-NNNN) and ISO dates (YYYY-MM-DD).
-            text_for_versions = f"{action} {desc} {product}"
+            text_for_versions = f"{action}. {desc}. {product}."
             clean_text_for_versions = re.sub(r"CVE-\d{4}-\d+", "", text_for_versions, flags=re.IGNORECASE)
             clean_text_for_versions = re.sub(r"\b\d{4}-\d{2}-\d{2}\b", "", clean_text_for_versions)
             raw_versions = re.findall(r"(?<![\w.])[vV]?(\d+\.\d+(?:\.\d+)*)\b(?!\.\d)", clean_text_for_versions)
@@ -510,42 +725,127 @@ def extract_cve_entries(kev_vulns: Any) -> List[Dict[str, Any]]:
             # Also require that requiredAction or description has an explicit update/fixed phrasing.
             # Bare "version <x>" alone describes affected versions and must NOT be accepted.
             fix_directive_pattern = (
-                r"(?:update to (?:version )?|fixed in (?:version )?|patch version |upgrade to (?:version )?|"
-                r"apply (?:patch|update) (?:version )?|patched in (?:version )?|fixed by updating to (?:version )?)\s*[vV]?\s*"
+                r"(?:update(?:\s+[^.\n;]{1,60}?\s+to|\s+to)?(?:\s+version)?|"
+                r"fixed\s+in(?:\s+[^.\n;]{1,60}?)?(?:\s+version)?|"
+                r"patch\s+version|"
+                r"upgrade(?:\s+[^.\n;]{1,60}?\s+to|\s+to)?(?:\s+version)?|"
+                r"apply\s+(?:patch|update)(?:\s+version)?|"
+                r"apply(?:\s+[^.\n;]{1,60}?)?\s+(?:patch|update)(?:\s+version)?|"
+                r"patched\s+in(?:\s+version)?|"
+                r"fixed\s+by\s+updating\s+to(?:\s+version)?)\s*[vV]?\s*"
                 + re.escape(fixed_ver)
             )
-            if not re.search(fix_directive_pattern, text_for_versions, re.IGNORECASE):
-                logger.info("Skipping unlisted KEV %s: version %s not tied to fix/update directive", cve_id, fixed_ver)
+            valid_fix_clauses = []
+            for m in re.finditer(fix_directive_pattern, text_for_versions, re.IGNORECASE):
+                start, end = m.start(), m.end()
+                prefix = text_for_versions[max(0, start - 40):start]
+                pre_clause = re.split(r"[\.\;\n]", prefix)[-1]
+                if re.search(r"\b(?:do\s+not|don'?t|never|cannot|not|avoid|without|refrain\s+from)\b\s*$", pre_clause, re.IGNORECASE):
+                    continue
+                if re.search(r"\b(?:do\s+not|don'?t|never|cannot|avoid|refrain\s+from)\b", pre_clause, re.IGNORECASE):
+                    continue
+                if re.search(r"\b(?:not\s+fixed|unfixed)\b", pre_clause, re.IGNORECASE):
+                    continue
+
+                suffix = re.split(r"[\.\;\n]", text_for_versions[end:])[0]
+                if re.search(r"\b(?:introduced|introduces|causing|caused|causes|creates|created|triggers|triggered)\b", suffix, re.IGNORECASE):
+                    continue
+                if re.search(r"\b(?:is|are|was|were|remains?)\s+(?:vulnerable|flawed|affected|broken)\b", suffix, re.IGNORECASE):
+                    continue
+
+                full_clause = pre_clause + " " + text_for_versions[start:end] + " " + suffix
+                valid_fix_clauses.append(full_clause)
+
+            if not valid_fix_clauses:
+                logger.info("Skipping unlisted KEV %s: version %s not tied to a valid non-negated fix/update directive", cve_id, fixed_ver)
+                continue
+
+            # Fail closed when any accepted fix clause carries exclusion/negation wording
+            # (e.g. "without, at this time, changing WebView"): such a clause does not
+            # positively state which package the version fixes.
+            if any(_FIX_CLAUSE_EXCLUSION_RE.search(clause) for clause in valid_fix_clauses):
+                logger.info("Skipping unlisted KEV %s: fix clause contains exclusion or negation wording", cve_id)
                 continue
 
             # 5. Resolve target package without blanket-copying across distinct packages
             target_pkgs = []
             if is_chrome:
-                has_chrome = "chrome" in combined_text or "chromium" in combined_text
-                has_webview = "webview" in combined_text
+                has_chrome = bool(re.search(r"\b(?:chrome|chromium)\b", combined_text))
+                has_webview = bool(re.search(r"\bwebview\b", combined_text))
                 if has_chrome and not has_webview:
-                    target_pkgs = [("com.android.chrome", "Google Chrome")]
+                    if _required_action_has_foreign_directive(action, "com.android.chrome", fixed_ver):
+                        logger.info("Skipping unlisted KEV %s: foreign update directive in action for Chrome", cve_id)
+                        continue
+                    if all(_has_single_product_authority(clause, "com.android.chrome", fixed_ver) for clause in valid_fix_clauses):
+                        target_pkgs = [("com.android.chrome", "Google Chrome")]
+                    else:
+                        logger.info("Skipping unlisted KEV %s: no positive Chrome fix authority", cve_id)
+                        continue
                 elif has_webview and not has_chrome:
-                    target_pkgs = [("com.google.android.webview", "Android System WebView")]
+                    if _required_action_has_foreign_directive(action, "com.google.android.webview", fixed_ver):
+                        logger.info("Skipping unlisted KEV %s: foreign update directive in action for WebView", cve_id)
+                        continue
+                    if all(_has_single_product_authority(clause, "com.google.android.webview", fixed_ver) for clause in valid_fix_clauses):
+                        target_pkgs = [("com.google.android.webview", "Android System WebView")]
+                    else:
+                        logger.info("Skipping unlisted KEV %s: no positive WebView fix authority", cve_id)
+                        continue
                 elif has_chrome and has_webview:
-                    # Both explicitly mentioned in the advisory
-                    target_pkgs = [
-                        ("com.android.chrome", "Google Chrome"),
-                        ("com.google.android.webview", "Android System WebView"),
-                    ]
+                    # Both explicitly mentioned in the advisory. Emit both packages only when
+                    # every accepted fix clause positively grants joint authority; product
+                    # absence or negation is never treated as authority.
+                    if _required_action_has_joint_foreign_directive(action, fixed_ver):
+                        logger.info("Skipping unlisted KEV %s: foreign update directive in action for joint Chrome/WebView", cve_id)
+                        continue
+                    if all(_has_joint_chrome_webview_authority(clause, fixed_ver) for clause in valid_fix_clauses):
+                        target_pkgs = [
+                            ("com.android.chrome", "Google Chrome"),
+                            ("com.google.android.webview", "Android System WebView"),
+                        ]
+                    else:
+                        logger.info("Skipping unlisted KEV %s: no positive joint Chrome/WebView fix authority", cve_id)
+                        continue
                 else:
                     logger.info("Skipping unlisted KEV %s: ambiguous Chrome/WebView package", cve_id)
                     continue
             elif is_whatsapp:
-                has_business = "business" in combined_text or "w4b" in combined_text
-                has_messenger = "messenger" in combined_text
-                if has_business and not has_messenger:
-                    target_pkgs = [("com.whatsapp.w4b", "WhatsApp Business")]
-                elif not has_business:
-                    # "WhatsApp" without "business" targets WhatsApp Messenger
-                    target_pkgs = [("com.whatsapp", "WhatsApp Messenger")]
+                has_business = bool(re.search(r"\b(?:business|w4b)\b", combined_text))
+                text_without_business = re.sub(r"\bwhatsapp\s+business\b|\bw4b\b", "", combined_text)
+                has_messenger = bool(re.search(r"\b(?:whatsapp|messenger)\b", text_without_business))
+
+                if has_messenger and not has_business:
+                    if _required_action_has_foreign_directive(action, "com.whatsapp", fixed_ver):
+                        logger.info("Skipping unlisted KEV %s: foreign update directive in action for WhatsApp", cve_id)
+                        continue
+                    if all(_has_single_product_authority(clause, "com.whatsapp", fixed_ver) for clause in valid_fix_clauses):
+                        target_pkgs = [("com.whatsapp", "WhatsApp Messenger")]
+                    else:
+                        logger.info("Skipping unlisted KEV %s: no positive WhatsApp Messenger fix authority", cve_id)
+                        continue
+                elif has_business and not has_messenger:
+                    if _required_action_has_foreign_directive(action, "com.whatsapp.w4b", fixed_ver):
+                        logger.info("Skipping unlisted KEV %s: foreign update directive in action for WhatsApp Business", cve_id)
+                        continue
+                    if all(_has_single_product_authority(clause, "com.whatsapp.w4b", fixed_ver) for clause in valid_fix_clauses):
+                        target_pkgs = [("com.whatsapp.w4b", "WhatsApp Business")]
+                    else:
+                        logger.info("Skipping unlisted KEV %s: no positive WhatsApp Business fix authority", cve_id)
+                        continue
+                elif has_messenger and has_business:
+                    # Both products mentioned: emit both only if the fix is explicitly stated for both products,
+                    # otherwise reject as ambiguous; never pick one.
+                    if _required_action_has_joint_whatsapp_foreign_directive(action, fixed_ver):
+                        logger.info("Skipping unlisted KEV %s: foreign update directive in action for joint WhatsApp", cve_id)
+                        continue
+                    if all(_has_joint_whatsapp_authority(clause, fixed_ver) for clause in valid_fix_clauses):
+                        target_pkgs = [
+                            ("com.whatsapp", "WhatsApp Messenger"),
+                            ("com.whatsapp.w4b", "WhatsApp Business"),
+                        ]
+                    else:
+                        logger.info("Skipping unlisted KEV %s: record mentions both WhatsApp products but fix is not explicitly stated for both", cve_id)
+                        continue
                 else:
-                    # Both business and messenger mentioned with single version is ambiguous
                     logger.info("Skipping unlisted KEV %s: ambiguous WhatsApp package targeting", cve_id)
                     continue
 

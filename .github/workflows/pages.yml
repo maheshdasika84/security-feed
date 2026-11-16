@@ -43,13 +43,13 @@ jobs:
 
       - name: Refuse a feed the app would reject
         run: |
-          python verify_feed.py threat_feed.json
+          if [ -f threat_feed.json ]; then python verify_feed.py threat_feed.json; fi
           if [ -f cve_feed.json ]; then python verify_feed.py cve_feed.json; fi
 
       - name: Stage site (feed only)
         run: |
           mkdir -p _site
-          cp threat_feed.json _site/threat_feed.json
+          if [ -f threat_feed.json ]; then cp threat_feed.json _site/threat_feed.json; fi
           if [ -f cve_feed.json ]; then cp cve_feed.json _site/cve_feed.json; fi
           touch _site/.nojekyll
 
