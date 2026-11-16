@@ -170,6 +170,19 @@
       "actively_exploited": true
     },
     {
+      "package_name": "com.android.chrome",
+      "app_name": "Google Chrome",
+      "fixed_version": "157.0.8103.50",
+      "fixed_version_code": 0,
+      "severity": "High",
+      "title": "Chromium XML Use-After-Free",
+      "summary": "Use-after-free in XML component in Google Chrome prior to 157.0.8103.50 allows remote code execution inside the sandbox; actively exploited (CISA KEV 2026-11-10).",
+      "cve_id": "CVE-2026-125350",
+      "source": "CISA KEV",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
+      "actively_exploited": true
+    },
+    {
       "package_name": "com.google.android.webview",
       "app_name": "Android System WebView",
       "fixed_version": "112.0.5615.121",
@@ -339,6 +352,19 @@
       "actively_exploited": true
     },
     {
+      "package_name": "com.google.android.webview",
+      "app_name": "Android System WebView",
+      "fixed_version": "157.0.8103.50",
+      "fixed_version_code": 0,
+      "severity": "High",
+      "title": "Chromium XML Use-After-Free",
+      "summary": "Use-after-free in XML component in Google Chromium prior to 157.0.8103.50 allows remote code execution inside the sandbox; actively exploited (CISA KEV 2026-11-10).",
+      "cve_id": "CVE-2026-125350",
+      "source": "CISA KEV",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
+      "actively_exploited": true
+    },
+    {
       "package_name": "com.whatsapp",
       "app_name": "WhatsApp Messenger",
       "fixed_version": "2.19.134",
@@ -365,14 +391,14 @@
       "actively_exploited": true
     }
   ],
-  "feed_version": "2026.11.15-v1",
+  "feed_version": "2026.11.16-v1",
   "metadata": {
     "key_id": "kv1",
-    "issued_at": 1794744214,
-    "expires_at": "2026-11-29 12:03:34",
-    "generated_at": "2026-11-15 12:03:34",
+    "issued_at": 1794818465,
+    "expires_at": "2026-11-30 08:41:05",
+    "generated_at": "2026-11-16 08:41:05",
     "valid_days": 14,
     "scope": "cves"
   },
-  "signature": "9b34d6a3e804028908d562bff02545c35e9ee06cc70c01eace11d8f0fde4d202e1f7c4bf5e9f4a183fcfa27a63783d29661a9446581f9d19b141be20f839a506"
+  "signature": "d2a1e286b6a7b0b8f3715706e1fd8dbeeb36628a414e5ae1d694c7a7d3ae45846bf303a704ed78487a8442d57c371a6ec548129f6c97ccb2f54478591967a507"
 }
