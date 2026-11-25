@@ -391,14 +391,14 @@
       "actively_exploited": true
     }
   ],
-  "feed_version": "2026.11.24-v1",
+  "feed_version": "2026.11.25-v1",
   "metadata": {
     "key_id": "kv1",
-    "issued_at": 1795532399,
-    "expires_at": "2026-12-08 14:59:59",
-    "generated_at": "2026-11-24 14:59:59",
+    "issued_at": 1795617537,
+    "expires_at": "2026-12-09 14:38:57",
+    "generated_at": "2026-11-25 14:38:57",
     "valid_days": 14,
     "scope": "cves"
   },
-  "signature": "53426b2b8675dd0d130b8f37d5d4e396ffe32144ba1b440d0f9c8be650114b2270b0999343a2bf117f03f8dc01a0a461a8d7d6af983d20411e06762be77dcc01"
+  "signature": "d5c947c7914afd83f0f6e812c8f0c6ff77127365a1e9d10a5c48e4c3a82a3c956f93ce8a5f6b4f5614cc053dbfbe430af8638c8a24d82ebe8cb20fa7fea79f04"
 }
